@@ -118,4 +118,5 @@ plt.ylim(0, 50)   # Adjust based on expected max height
 # Show the plot
 plt.show()
 ```
-alt
+
+![alt text](chart.png)
