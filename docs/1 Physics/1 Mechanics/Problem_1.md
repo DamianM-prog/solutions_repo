@@ -1,7 +1,8 @@
 # Problem 1
-## Projectile Motion
 
 ## Discuss the problem of projectile motion. Investigate the dependence of the range on the angle of projection.
+
+## Projectile Motion
 
 Projectile motion refers to the motion of an object that is launched into the air and is influenced only by the force of gravity after its initial launch. The path followed by a projectile is a curved trajectory, typically a parabola, and is determined by its initial velocity, launch angle, and the acceleration due to gravity. Understanding the dynamics of projectile motion involves analyzing key components: the horizontal motion, the vertical motion, and the angle of projection.
 
