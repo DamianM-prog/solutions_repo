@@ -139,17 +139,17 @@ plt.figure(figsize=(10, 6))
 for angle in angles:
     # Convert angle to radians
     theta = np.radians(angle)
-    
+
     # Time of flight
     T = (2 * v0 * np.sin(theta)) / g
-    
+
     # Time intervals
     t = np.linspace(0, T, num=500)
-    
+
     # Equations of motion
     x = v0 * np.cos(theta) * t               # Horizontal distance
     y = v0 * np.sin(theta) * t - 0.5 * g * t**2  # Vertical distance
-    
+
     # Plotting
     plt.plot(x, y, label=f'Angle: {angle}°')
 
@@ -162,10 +162,9 @@ plt.axvline(0, color='black', lw=0.5, ls='--')  # Initial launch line
 plt.grid()
 plt.legend()
 plt.xlim(0, 300)  # Adjust based on expected range
-plt.ylim(0, 50)   # Adjust based on expected max height
+plt.ylim(0, 130)   # Adjust based on expected max height
 
 # Show the plot
 plt.show()
 ```
-
-![alt text](chart.png)
+![alt text](image.png)
