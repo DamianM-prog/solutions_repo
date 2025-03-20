@@ -168,3 +168,13 @@ plt.ylim(0, 130)   # Adjust based on expected max height
 plt.show()
 ```
 ![alt text](image.png)
+
+### Thrown projectiles form different heights.
+
+![alt text](image-1.png)
+
+### Projectiles thrown on different planets.
+
+![alt text](image-2.png)
+
+#### Code available at my collab.
