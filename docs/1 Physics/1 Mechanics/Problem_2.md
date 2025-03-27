@@ -12,19 +12,19 @@ $$
 \frac{d^2 \theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0
 $$
 
-For small $ \theta $, $ \sin(\theta) \approx \theta $, simplifying to:
+For small θ, sin(θ) ≈ θ, simplifying to:
 
 $$
 \frac{d^2 \theta}{dt^2} + \omega_0^2 \theta = 0
 $$
 
 #### Symbols and Units
-- $ \theta $ : Angular displacement (radians, rad)
-- $ t $ : Time (seconds, s)
-- $ g $ : Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²
-- $ L $ : Pendulum length (meters, m)
-- $ \omega_0 $ : Natural angular frequency (radians per second, rad/s), where $ \omega_0 = \sqrt{\frac{g}{L}} $
-- $ T $ : Period (seconds, s), where $ T = 2\pi \sqrt{\frac{L}{g}} $
+- θ: Angular displacement (radians, rad)  
+- t: Time (seconds, s)  
+- g: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²  
+- L: Pendulum length (meters, m)  
+- ω₀: Natural angular frequency (radians per second, rad/s), where ω₀ = √(g/L)  
+- T: Period (seconds, s), where T = 2π √(L/g)
 
 ### Damped Pendulum
 With damping, the equation becomes:
@@ -34,7 +34,7 @@ $$
 $$
 
 #### Symbols and Units
-- $ b $: Damping coefficient (per second, s⁻¹), representing resistance per unit velocity
+-  b : Damping coefficient (per second, s⁻¹), representing resistance per unit velocity
 
 The equation describes underdamped, critically damped, or overdamped motion based on $ b $.
 
@@ -73,14 +73,14 @@ $$
 $$
 
 #### Symbols and Units
-- $ \theta' $: Angular velocity (rad/s)
-- $ \theta'' $: Angular acceleration (rad/s²)
-- $ r $: Characteristic root (s⁻¹)
-- $ A, B, C $: Constants (rad), determined by initial conditions
-- $ \gamma $: Damping factor (s⁻¹), where $ \gamma = \frac{b}{2} $
-- $ \omega $: Damped angular frequency (rad/s), where $ \omega = \sqrt{\omega_0^2 - \gamma^2} $
-- $ \phi $: Phase angle (rad)
-- $ T $: Damped period (s), where $ T = \frac{2\pi}{\omega} $
+- θ': Angular velocity (rad/s)  
+- θ'': Angular acceleration (rad/s²)  
+- r: Characteristic root (s⁻¹)  
+- A, B, C: Constants (rad), determined by initial conditions  
+- γ: Damping factor (s⁻¹), where γ = b/2  
+- ω: Damped angular frequency (rad/s), where ω = √(ω₀² - γ²)  
+- φ: Phase angle (rad)  
+- T: Damped period (s), where T = 2π / ω
 
 ## Simulation or Numerical Modeling (Optional)
 Simulate with:
