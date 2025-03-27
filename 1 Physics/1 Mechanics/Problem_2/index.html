@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 2 - Physics and Mathematics</title>
+<title>Damped Pendulum Analysis - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 2";
+        var mkdocs_page_name = "Damped Pendulum Analysis";
         var mkdocs_page_input_path = "1 Physics/1 Mechanics/Problem_2.md";
         var mkdocs_page_url = null;
       </script>
@@ -48,8 +48,32 @@
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Problem_1/">Problem 1</a>
 </li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Damped Pendulum Analysis</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#theoretical-framework">Theoretical Framework</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#simple-pendulum-undamped">Simple Pendulum (Undamped)</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#damped-pendulum">Damped Pendulum</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#mathematical-analysis">Mathematical Analysis</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#solutions">Solutions</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#simulation-or-numerical-modeling-optional">Simulation or Numerical Modeling (Optional)</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#experimental-setup-if-applicable">Experimental Setup (If Applicable)</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#results-and-discussion">Results and Discussion</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -163,7 +187,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">1 Mechanics</li>
-<li class="breadcrumb-item active">Problem 2</li>
+<li class="breadcrumb-item active">Damped Pendulum Analysis</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -171,7 +195,93 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-2">Problem 2</h1>
+<h1 id="damped-pendulum-analysis">Damped Pendulum Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>A pendulum is a mass on a pivot, oscillating under gravity. Without damping, it swings indefinitely, but forces like friction introduce <strong>damping</strong>, reducing amplitude over time. This project analyzes damped pendulum dynamics theoretically, with optional simulation or experimental components.</p>
+<h2 id="theoretical-framework">Theoretical Framework</h2>
+<h3 id="simple-pendulum-undamped">Simple Pendulum (Undamped)</h3>
+<p>The undamped pendulum’s motion is:</p>
+<div class="arithmatex">\[
+\frac{d^2 \theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0
+\]</div>
+<p>For small $ \theta $, $ \sin(\theta) \approx \theta $, simplifying to:</p>
+<div class="arithmatex">\[
+\frac{d^2 \theta}{dt^2} + \omega_0^2 \theta = 0
+\]</div>
+<h4 id="symbols-and-units">Symbols and Units</h4>
+<ul>
+<li>$ \theta $: Angular displacement (radians, rad)</li>
+<li>$ t $: Time (seconds, s)</li>
+<li>$ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²</li>
+<li>$ L $: Pendulum length (meters, m)</li>
+<li>$ \omega_0 $: Natural angular frequency (radians per second, rad/s), where $ \omega_0 = \sqrt{\frac{g}{L}} $</li>
+<li>$ T $: Period (seconds, s), where $ T = 2\pi \sqrt{\frac{L}{g}} $</li>
+</ul>
+<h3 id="damped-pendulum">Damped Pendulum</h3>
+<p>With damping, the equation becomes:</p>
+<div class="arithmatex">\[
+\frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \theta = 0
+\]</div>
+<h4 id="symbols-and-units_1">Symbols and Units</h4>
+<ul>
+<li>$ b $: Damping coefficient (per second, s⁻¹), representing resistance per unit velocity</li>
+</ul>
+<p>The equation describes underdamped, critically damped, or overdamped motion based on $ b $.</p>
+<h2 id="mathematical-analysis">Mathematical Analysis</h2>
+<p>For:</p>
+<div class="arithmatex">\[
+\theta'' + b \theta' + \omega_0^2 \theta = 0
+\]</div>
+<p>the characteristic equation is:</p>
+<div class="arithmatex">\[
+r^2 + b r + \omega_0^2 = 0
+\]</div>
+<p>Roots: $ r = \frac{-b \pm \sqrt{b^2 - 4 \omega_0^2}}{2} $ (units: s⁻¹).</p>
+<h3 id="solutions">Solutions</h3>
+<ul>
+<li><strong>Overdamped</strong> ($ b^2 - 4 \omega_0^2 &gt; 0 $):</li>
+</ul>
+<div class="arithmatex">\[
+\theta(t) = A e^{r_1 t} + B e^{r_2 t}
+\]</div>
+<ul>
+<li><strong>Critically damped</strong> ($ b^2 - 4 \omega_0^2 = 0 $):</li>
+</ul>
+<div class="arithmatex">\[
+\theta(t) = (A + B t) e^{-\frac{b}{2} t}
+\]</div>
+<ul>
+<li><strong>Underdamped</strong> ($ b^2 - 4 \omega_0^2 &lt; 0 $):</li>
+</ul>
+<div class="arithmatex">\[
+\theta(t) = C e^{-\gamma t} \cos(\omega t + \phi)
+\]</div>
+<h4 id="symbols-and-units_2">Symbols and Units</h4>
+<ul>
+<li>$ \theta' $: Angular velocity (rad/s)</li>
+<li>$ \theta'' $: Angular acceleration (rad/s²)</li>
+<li>$ r $: Characteristic root (s⁻¹)</li>
+<li>$ A, B, C $: Constants (rad), determined by initial conditions</li>
+<li>$ \gamma $: Damping factor (s⁻¹), where $ \gamma = \frac{b}{2} $</li>
+<li>$ \omega $: Damped angular frequency (rad/s), where $ \omega = \sqrt{\omega_0^2 - \gamma^2} $</li>
+<li>$ \phi $: Phase angle (rad)</li>
+<li>$ T $: Damped period (s), where $ T = \frac{2\pi}{\omega} $</li>
+</ul>
+<h2 id="simulation-or-numerical-modeling-optional">Simulation or Numerical Modeling (Optional)</h2>
+<p>Simulate with:
+- Initial angle $ \theta_0 $ (rad)
+- Damping coefficient $ b $ (s⁻¹)
+- Length $ L $ (m)</p>
+<p>Plot $ \theta(t) $ (rad) vs. $ t $ (s) or phase space ($ \theta $ vs. $ \theta' $).</p>
+<h2 id="experimental-setup-if-applicable">Experimental Setup (If Applicable)</h2>
+<p>Build a pendulum with:
+- Mass on a string (length $ L $ in m)
+- Damping via air or a vane</p>
+<p>Measure $ \theta(t) $ (rad) and $ t $ (s), fitting amplitude decay to $ e^{-\gamma t} $ to find $ b $ (s⁻¹).</p>
+<h2 id="results-and-discussion">Results and Discussion</h2>
+<p>Damping reduces amplitude exponentially (e.g., via $ e^{-\gamma t} $), with $ T $ (s) increasing slightly in underdamped cases. Larger $ b $ (s⁻¹) speeds decay. Compare theory to simulations/experiments if included.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Damping, governed by $ b $ (s⁻¹), shapes pendulum motion, with practical uses in engineering and physics. Future work could explore nonlinear dynamics.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
