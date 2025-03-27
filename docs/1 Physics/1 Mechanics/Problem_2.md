@@ -19,12 +19,12 @@ $$
 $$
 
 #### Symbols and Units
-- $ \theta $: Angular displacement (radians, rad)
-- $ t $: Time (seconds, s)
-- $ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²
-- $ L $: Pendulum length (meters, m)
-- $ \omega_0 $: Natural angular frequency (radians per second, rad/s), where $ \omega_0 = \sqrt{\frac{g}{L}} $
-- $ T $: Period (seconds, s), where $ T = 2\pi \sqrt{\frac{L}{g}} $
+- $ \theta $ : Angular displacement (radians, rad)
+- $ t $ : Time (seconds, s)
+- $ g $ : Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²
+- $ L $ : Pendulum length (meters, m)
+- $ \omega_0 $ : Natural angular frequency (radians per second, rad/s), where $ \omega_0 = \sqrt{\frac{g}{L}} $
+- $ T $ : Period (seconds, s), where $ T = 2\pi \sqrt{\frac{L}{g}} $
 
 ### Damped Pendulum
 With damping, the equation becomes:
