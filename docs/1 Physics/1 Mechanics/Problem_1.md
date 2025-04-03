@@ -107,10 +107,6 @@ From this equation, we see that the range ($R$) is dependent on the initial velo
 
 3. **Range at Other Angles**: The range decreases as the angle moves away from 45°, either toward 0° (where the projectile travels straight and falls almost immediately) or toward 90° (where it goes straight up and comes straight down).
 
-## Conclusion
-
-In summary, projectile motion is affected by the angle of projection, with a specific relationship that defines how far a projectile will travel. The maximum horizontal range is achieved at a projection angle of 45 degrees. Understanding these principles is crucial in fields ranging from sports science to engineering and military applications.
-
 ### My collab simulation
 
 #### My simulations include: A graph of trajectory of 6 different angles, animation of them, an animation of a 45 degree angle both applying air resistance and without applying it.
@@ -178,3 +174,7 @@ plt.show()
 ![alt text](image-2.png)
 
 #### Code available at my colab.
+
+## Conclusion
+
+In summary, projectile motion is affected by the angle of projection, with a specific relationship that defines how far a projectile will travel. The maximum horizontal range is achieved at a projection angle of 45 degrees. Understanding these principles is crucial in fields ranging from sports science to engineering and military applications.
