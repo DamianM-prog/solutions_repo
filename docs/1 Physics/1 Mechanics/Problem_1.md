@@ -177,4 +177,4 @@ plt.show()
 
 ![alt text](image-2.png)
 
-#### Code available at my collab.
+#### Code available at my colab.
