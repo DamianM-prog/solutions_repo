@@ -1,6 +1,7 @@
-# Investigating the Dynamics of a Forced Damped Pendulum
+# Problem 2
+## Investigating the Dynamics of a Forced Damped Pendulum
 
-## Introduction
+### Introduction
 A forced damped pendulum extends the classic pendulum by incorporating damping, which dissipates energy, and an external periodic force, which adds energy. This system exhibits rich behaviors like resonance and chaos, making it a compelling subject for study. Applications include mechanical oscillators, seismic instruments, and models of nonlinear dynamics. This investigation aims to explore how damping and forcing shape the pendulum's motion through theory, simulation, and potential experiments.
 
 ## Theoretical Framework
@@ -11,13 +12,20 @@ $$
 $$
 
 ### Symbols and Units
-- $ \theta $: Angular displacement (radians, rad)
-- $ t $: Time (seconds, s)
-- $ b $: Damping coefficient (per second, s⁻¹)
-- $ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²
-- $ L $: Pendulum length (meters, m)
-- $ A $: Forcing amplitude (meters per second squared, m/s²)
-- $ \omega_f $: Forcing frequency (radians per second, rad/s)
+ $ \theta $: Angular displacement (radians, rad)
+
+ $ t $: Time (seconds, s)
+
+ $ b $: Damping coefficient (per second, s⁻¹)
+
+ $ g $: Gravitational acceleration (meters per second squared, m/s²), 
+ typically 9.81 m/s²
+
+ $ L $: Pendulum length (meters, m)
+
+ $ A $: Forcing amplitude (meters per second squared, m/s²)
+ 
+ $ \omega_f $: Forcing frequency (radians per second, rad/s)
 
 - **Damping Term** ($ b \frac{d \theta}{dt} $): Represents energy loss due to friction or resistance.
 - **Restoring Force** ($ \frac{g}{L} \sin(\theta) $): Nonlinear, complicating the dynamics.
@@ -60,16 +68,24 @@ $$
 $$
 
 ### Symbols and Units
-- $ \theta $: Angular displacement (radians, rad)
-- $ t $: Time (seconds, s)
-- $ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²
-- $ L $: Pendulum length (meters, m)
-- $ \omega_0 $: Natural angular frequency (radians per second, rad/s)
-- $ \theta_0 $: Initial amplitude (radians, rad)
-- $ \phi $: Phase angle (radians, rad)
-- $ T $: Period (seconds, s), where $ T = \frac{2\pi}{\omega_0} = 2\pi \sqrt{\frac{L}{g}} $
+ $ \theta $: Angular displacement (radians, rad)
+
+ $ t $: Time (seconds, s)
+
+ $ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²
+
+ $ L $: Pendulum length (meters, m)
+
+ $ \omega_0 $: Natural angular frequency (radians per second, rad/s)
+
+ $ \theta_0 $: Initial amplitude (radians, rad)
+
+ $ \phi $: Phase angle (radians, rad)
+
+ $ T $: Period (seconds, s), where $ T = \frac{2\pi}{\omega_0} = 2\pi \sqrt{\frac{L}{g}} $
 
 ## Mathematical Analysis
+
 ### Linear Case (Small Angles)
 For the simplified equation:
 
