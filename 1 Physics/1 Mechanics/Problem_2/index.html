@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Investigating the Dynamics of a Forced Damped Pendulum - Physics and Mathematics</title>
+<title>Problem 2 - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Investigating the Dynamics of a Forced Damped Pendulum";
+        var mkdocs_page_name = "Problem 2";
         var mkdocs_page_input_path = "1 Physics/1 Mechanics/Problem_2.md";
         var mkdocs_page_url = null;
       </script>
@@ -48,9 +48,13 @@
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Problem_1/">Problem 1</a>
 </li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Investigating the Dynamics of a Forced Damped Pendulum</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a>
+<li class="toctree-l3"><a class="reference internal" href="#investigating-the-dynamics-of-a-forced-damped-pendulum">Investigating the Dynamics of a Forced Damped Pendulum</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a>
+</li>
+</ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#theoretical-framework">Theoretical Framework</a>
 <ul>
@@ -199,7 +203,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">1 Mechanics</li>
-<li class="breadcrumb-item active">Investigating the Dynamics of a Forced Damped Pendulum</li>
+<li class="breadcrumb-item active">Problem 2</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -207,8 +211,9 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="investigating-the-dynamics-of-a-forced-damped-pendulum">Investigating the Dynamics of a Forced Damped Pendulum</h1>
-<h2 id="introduction">Introduction</h2>
+<h1 id="problem-2">Problem 2</h1>
+<h2 id="investigating-the-dynamics-of-a-forced-damped-pendulum">Investigating the Dynamics of a Forced Damped Pendulum</h2>
+<h3 id="introduction">Introduction</h3>
 <p>A forced damped pendulum extends the classic pendulum by incorporating damping, which dissipates energy, and an external periodic force, which adds energy. This system exhibits rich behaviors like resonance and chaos, making it a compelling subject for study. Applications include mechanical oscillators, seismic instruments, and models of nonlinear dynamics. This investigation aims to explore how damping and forcing shape the pendulum's motion through theory, simulation, and potential experiments.</p>
 <h2 id="theoretical-framework">Theoretical Framework</h2>
 <p>The motion of a forced damped pendulum is governed by:</p>
@@ -216,19 +221,16 @@
 \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = A \cos(\omega_f t)
 \]</div>
 <h3 id="symbols-and-units">Symbols and Units</h3>
-<ul>
-<li>$ \theta $: Angular displacement (radians, rad)</li>
-<li>$ t $: Time (seconds, s)</li>
-<li>$ b $: Damping coefficient (per second, s⁻¹)</li>
-<li>$ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²</li>
-<li>$ L $: Pendulum length (meters, m)</li>
-<li>$ A $: Forcing amplitude (meters per second squared, m/s²)</li>
-<li>
+<p>$ \theta $: Angular displacement (radians, rad)</p>
+<p>$ t $: Time (seconds, s)</p>
+<p>$ b $: Damping coefficient (per second, s⁻¹)</p>
+<p>$ g $: Gravitational acceleration (meters per second squared, m/s²), 
+ typically 9.81 m/s²</p>
+<p>$ L $: Pendulum length (meters, m)</p>
+<p>$ A $: Forcing amplitude (meters per second squared, m/s²)</p>
 <p>$ \omega_f $: Forcing frequency (radians per second, rad/s)</p>
-</li>
-<li>
-<p><strong>Damping Term</strong> ($ b \frac{d \theta}{dt} $): Represents energy loss due to friction or resistance.</p>
-</li>
+<ul>
+<li><strong>Damping Term</strong> ($ b \frac{d \theta}{dt} $): Represents energy loss due to friction or resistance.</li>
 <li><strong>Restoring Force</strong> ($ \frac{g}{L} \sin(\theta) $): Nonlinear, complicating the dynamics.</li>
 <li><strong>Forcing Term</strong> ($ A \cos(\omega_f t) $): Drives the system periodically.</li>
 </ul>
@@ -260,16 +262,14 @@
 \theta(t) = \theta_0 \cos(\omega_0 t + \phi)
 \]</div>
 <h3 id="symbols-and-units_1">Symbols and Units</h3>
-<ul>
-<li>$ \theta $: Angular displacement (radians, rad)</li>
-<li>$ t $: Time (seconds, s)</li>
-<li>$ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²</li>
-<li>$ L $: Pendulum length (meters, m)</li>
-<li>$ \omega_0 $: Natural angular frequency (radians per second, rad/s)</li>
-<li>$ \theta_0 $: Initial amplitude (radians, rad)</li>
-<li>$ \phi $: Phase angle (radians, rad)</li>
-<li>$ T $: Period (seconds, s), where $ T = \frac{2\pi}{\omega_0} = 2\pi \sqrt{\frac{L}{g}} $</li>
-</ul>
+<p>$ \theta $: Angular displacement (radians, rad)</p>
+<p>$ t $: Time (seconds, s)</p>
+<p>$ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²</p>
+<p>$ L $: Pendulum length (meters, m)</p>
+<p>$ \omega_0 $: Natural angular frequency (radians per second, rad/s)</p>
+<p>$ \theta_0 $: Initial amplitude (radians, rad)</p>
+<p>$ \phi $: Phase angle (radians, rad)</p>
+<p>$ T $: Period (seconds, s), where $ T = \frac{2\pi}{\omega_0} = 2\pi \sqrt{\frac{L}{g}} $</p>
 <h2 id="mathematical-analysis">Mathematical Analysis</h2>
 <h3 id="linear-case-small-angles">Linear Case (Small Angles)</h3>
 <p>For the simplified equation:</p>
