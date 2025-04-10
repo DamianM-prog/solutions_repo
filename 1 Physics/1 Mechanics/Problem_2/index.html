@@ -6,13 +6,13 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="../../../img/favicon.ico" rel="shortcut icon"/>
-<title>Problem 2 - Physics and Mathematics</title>
+<title>Problem 2: Analyze the Dynamics of a Damped Pendulum - Physics and Mathematics</title>
 <link href="../../../css/theme.css" rel="stylesheet"/>
 <link href="../../../css/theme_extra.css" rel="stylesheet"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" rel="stylesheet"/>
 <script>
         // Current page data
-        var mkdocs_page_name = "Problem 2";
+        var mkdocs_page_name = "Problem 2: Analyze the Dynamics of a Damped Pendulum";
         var mkdocs_page_input_path = "1 Physics/1 Mechanics/Problem_2.md";
         var mkdocs_page_url = null;
       </script>
@@ -48,47 +48,19 @@
 <ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../Problem_1/">Problem 1</a>
 </li>
-<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
+<li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2: Analyze the Dynamics of a Damped Pendulum</a>
 <ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="#investigating-the-dynamics-of-a-forced-damped-pendulum">Investigating the Dynamics of a Forced Damped Pendulum</a>
+<li class="toctree-l3"><a class="reference internal" href="#1-scope-and-objectives">1. Scope and Objectives</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-theoretical-framework">2. Theoretical Framework</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-mathematical-analysis">3. Mathematical Analysis</a>
 <ul>
-<li class="toctree-l4"><a class="reference internal" href="#introduction">Introduction</a>
+<li class="toctree-l4"><a class="reference internal" href="#vizualization-available-in-my-colab">Vizualization available in my colab</a>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#theoretical-framework">Theoretical Framework</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units">Symbols and Units</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#key-dynamics-to-investigate">Key Dynamics to Investigate</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#simple-pendulum">Simple Pendulum</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units_1">Symbols and Units</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#mathematical-analysis">Mathematical Analysis</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="#linear-case-small-angles">Linear Case (Small Angles)</a>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#nonlinear-case">Nonlinear Case</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#numerical-simulation">Numerical Simulation</a>
-<ul>
-<li class="toctree-l4"><a class="reference internal" href="#example-experiment">Example experiment</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#experimental-setup-if-applicable">Experimental Setup (If Applicable)</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#results-and-discussion">Results and Discussion</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a>
+<li class="toctree-l3"><a class="reference internal" href="#4-results-analysis">4. Results Analysis</a>
 </li>
 </ul>
 </li>
@@ -203,7 +175,7 @@
 <li><a aria-label="Docs" class="icon icon-home" href="../../.."></a></li>
 <li class="breadcrumb-item">1 Physics</li>
 <li class="breadcrumb-item">1 Mechanics</li>
-<li class="breadcrumb-item active">Problem 2</li>
+<li class="breadcrumb-item active">Problem 2: Analyze the Dynamics of a Damped Pendulum</li>
 <li class="wy-breadcrumbs-aside">
 </li>
 </ul>
@@ -211,117 +183,170 @@
 </div>
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
-<h1 id="problem-2">Problem 2</h1>
-<h2 id="investigating-the-dynamics-of-a-forced-damped-pendulum">Investigating the Dynamics of a Forced Damped Pendulum</h2>
-<h3 id="introduction">Introduction</h3>
-<p>A forced damped pendulum extends the classic pendulum by incorporating damping, which dissipates energy, and an external periodic force, which adds energy. This system exhibits rich behaviors like resonance and chaos, making it a compelling subject for study. Applications include mechanical oscillators, seismic instruments, and models of nonlinear dynamics. This investigation aims to explore how damping and forcing shape the pendulum's motion through theory, simulation, and potential experiments.</p>
-<h2 id="theoretical-framework">Theoretical Framework</h2>
-<p>The motion of a forced damped pendulum is governed by:</p>
-<div class="arithmatex">\[
-\frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = A \cos(\omega_f t)
-\]</div>
-<h3 id="symbols-and-units">Symbols and Units</h3>
-<p>$ \theta $: Angular displacement (radians, rad)</p>
-<p>$ t $: Time (seconds, s)</p>
-<p>$ b $: Damping coefficient (per second, s⁻¹)</p>
-<p>$ g $: Gravitational acceleration (meters per second squared, m/s²), 
- typically 9.81 m/s²</p>
-<p>$ L $: Pendulum length (meters, m)</p>
-<p>$ A $: Forcing amplitude (meters per second squared, m/s²)</p>
-<p>$ \omega_f $: Forcing frequency (radians per second, rad/s)</p>
+<h1 id="problem-2-analyze-the-dynamics-of-a-damped-pendulum">Problem 2: Analyze the Dynamics of a Damped Pendulum</h1>
+<h2 id="1-scope-and-objectives">1. Scope and Objectives</h2>
 <ul>
-<li><strong>Damping Term</strong> ($ b \frac{d \theta}{dt} $): Represents energy loss due to friction or resistance.</li>
-<li><strong>Restoring Force</strong> ($ \frac{g}{L} \sin(\theta) $): Nonlinear, complicating the dynamics.</li>
-<li><strong>Forcing Term</strong> ($ A \cos(\omega_f t) $): Drives the system periodically.</li>
+<li><strong>Definition of a Damped Pendulum</strong>:</li>
+<li>A damped pendulum consists of a mass oscillating under gravity, attached to a pivot via a massless string or rod.</li>
+<li>Unlike an ideal pendulum, it experiences energy dissipation due to damping forces (e.g., friction at the pivot or air resistance), causing the amplitude to decrease over time.</li>
+<li><strong>Goal of the Analysis</strong>:</li>
+<li>To investigate how damping alters the pendulum’s motion compared to the undamped case.</li>
+<li>To explore this through:<ul>
+<li>Theoretical predictions of motion behavior.</li>
+<li>Analytical mathematical solutions for the linear case.</li>
+<li>Simulated behavior using numerical methods.</li>
 </ul>
-<p>For small angles, $ \sin(\theta) \approx \theta $, simplifying to:</p>
-<div class="arithmatex">\[
-\frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \omega_0^2 \theta = A \cos(\omega_f t)
-\]</div>
-<p>where $ \omega_0 = \sqrt{\frac{g}{L}} $ (natural frequency, rad/s).</p>
+</li>
+<li><strong>Real-World Relevance</strong>:</li>
+<li>Damped pendulums model systems like:<ul>
+<li>Mechanical clocks, where damping controls oscillation decay.</li>
+<li>Shock absorbers in vehicles, mitigating vibrations.</li>
+</ul>
+</li>
+<li>Understanding damping is key to designing stable oscillatory systems.</li>
+</ul>
+<h2 id="2-theoretical-framework">2. Theoretical Framework</h2>
+<ul>
+<li><strong>Simple Pendulum (Undamped)</strong>:</li>
+<li>Serves as the baseline for comparison.</li>
+<li><strong>Governing Equation</strong>:
+    $$
+    \frac{d^2 \theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0
+    $$</li>
+<li><strong>Small-Angle Approximation</strong>:<ul>
+<li>For small $ \theta $, $ \sin(\theta) \approx \theta $, simplifying to:
+  $$
+  \frac{d^2 \theta}{dt^2} + \omega_0^2 \theta = 0
+  $$</li>
+<li>Where $ \omega_0 = \sqrt{\frac{g}{L}} $ is the natural angular frequency.</li>
+</ul>
+</li>
+<li>
+<p><strong>Solution</strong>:</p>
+<ul>
+<li>Harmonic motion: $ \theta(t) = \theta_0 \cos(\omega_0 t + \phi) $.</li>
+<li>Period: $ T = 2\pi \sqrt{\frac{L}{g}} $.</li>
+</ul>
+</li>
+<li>
+<p><strong>Damped Pendulum</strong>:</p>
+</li>
+<li>Introduces energy loss through damping.</li>
+<li><strong>Governing Equation</strong>:
+    $$
+    \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = 0
+    $$</li>
+<li>
+<p><strong>Linear Approximation</strong>:</p>
+<ul>
+<li>For small $ \theta $, $ \sin(\theta) \approx \theta $, yielding:
+  $$
+  \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \omega_0^2 \theta = 0
+  $$</li>
+</ul>
+</li>
+<li>
+<p><strong>Parameters with Units</strong>:</p>
+</li>
+<li>$ \theta $: Angular displacement (radians, rad)</li>
+<li>$ t $: Time (seconds, s)</li>
+<li>$ b $: Damping coefficient (per second, s⁻¹)</li>
+<li>$ g $: Gravitational acceleration (meters per second squared, m/s²)</li>
+<li>$ L $: Pendulum length (meters, m)</li>
+<li>$ \omega_0 $: Natural frequency (radians per second, rad/s), $ \omega_0 = \sqrt{\frac{g}{L}} $</li>
+</ul>
 <p><img alt="alt text" src="../image-4.png"/></p>
-<h2 id="key-dynamics-to-investigate">Key Dynamics to Investigate</h2>
+<h2 id="3-mathematical-analysis">3. Mathematical Analysis</h2>
 <ul>
-<li><strong>Steady-State Oscillations</strong>: After transients fade, the pendulum may oscillate at $ \omega_f $, with amplitude influenced by $ b $, $ A $, and $ \omega_f / \omega_0 $.</li>
-<li><strong>Resonance</strong>: Maximum amplitude occurs when $ \omega_f \approx \omega_0 $, moderated by damping.</li>
-<li><strong>Transients</strong>: Initial motion depends on $ b $ and starting conditions.</li>
-<li><strong>Chaos</strong>: Large $ A $ or specific $ \omega_f $ can trigger irregular, unpredictable motion due to nonlinearity.</li>
-<li><strong>Energy Balance</strong>: Forcing adds energy, damping removes it; steady state reflects their equilibrium.</li>
+<li><strong>Solving the Linear Damped Equation</strong>:</li>
+<li><strong>Characteristic Equation</strong>:
+    $$
+    r^2 + b r + \omega_0^2 = 0
+    $$</li>
+<li><strong>Roots</strong>:<ul>
+<li>$ r = \frac{-b \pm \sqrt{b^2 - 4 \omega_0^2}}{2} $</li>
 </ul>
-<h2 id="simple-pendulum">Simple Pendulum</h2>
-<p>The simple pendulum is the starting point for understanding pendulum dynamics. It consists of a mass suspended from a pivot by a massless, inextensible string or rod, oscillating under gravity without damping or external forces. Its motion is described by:</p>
-<div class="arithmatex">\[
-\frac{d^2 \theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0
-\]</div>
-<p>For small angular displacements ($ \theta \ll 1 $), $ \sin(\theta) \approx \theta $, simplifying the equation to:</p>
-<div class="arithmatex">\[
-\frac{d^2 \theta}{dt^2} + \omega_0^2 \theta = 0
-\]</div>
-<p>where $ \omega_0 = \sqrt{\frac{g}{L}} $ is the natural angular frequency. The solution is harmonic:</p>
-<div class="arithmatex">\[
-\theta(t) = \theta_0 \cos(\omega_0 t + \phi)
-\]</div>
-<h3 id="symbols-and-units_1">Symbols and Units</h3>
-<p>$ \theta $: Angular displacement (radians, rad)</p>
-<p>$ t $: Time (seconds, s)</p>
-<p>$ g $: Gravitational acceleration (meters per second squared, m/s²), typically 9.81 m/s²</p>
-<p>$ L $: Pendulum length (meters, m)</p>
-<p>$ \omega_0 $: Natural angular frequency (radians per second, rad/s)</p>
-<p>$ \theta_0 $: Initial amplitude (radians, rad)</p>
-<p>$ \phi $: Phase angle (radians, rad)</p>
-<p>$ T $: Period (seconds, s), where $ T = \frac{2\pi}{\omega_0} = 2\pi \sqrt{\frac{L}{g}} $</p>
-<h2 id="mathematical-analysis">Mathematical Analysis</h2>
-<h3 id="linear-case-small-angles">Linear Case (Small Angles)</h3>
-<p>For the simplified equation:</p>
-<div class="arithmatex">\[
-\theta'' + b \theta' + \omega_0^2 \theta = A \cos(\omega_f t)
-\]</div>
-<ul>
-<li><strong>Homogeneous Solution</strong>: $ \theta_h(t) = e^{-\gamma t} (C_1 \cos(\omega t) + C_2 \sin(\omega t)) $, where $ \gamma = \frac{b}{2} $, $ \omega = \sqrt{\omega_0^2 - \gamma^2} $.</li>
-<li>
-<p><strong>Particular Solution</strong>: $ \theta_p(t) = D \cos(\omega_f t + \phi) $, where:
-  $$
-  D = \frac{A}{\sqrt{(\omega_0^2 - \omega_f^2)^2 + (b \omega_f)^2}}
-  $$
-  and $ \phi $ is a phase shift.</p>
 </li>
 <li>
-<p><strong>Resonance</strong>: $ D $ peaks when $ \omega_f \approx \omega_0 $, reduced by larger $ b $.</p>
+<p><strong>Damping Regimes</strong>:</p>
+<ul>
+<li><em>Overdamped</em> ($ b^2 &gt; 4 \omega_0^2 $):</li>
+<li>Real, distinct roots <span class="arithmatex">\( r_1 \)</span> and <span class="arithmatex">\( r_2 \)</span>.</li>
+<li>Solution:
+    $$
+    \theta(t) = A e^{r_1 t} + B e^{r_2 t}
+    $$</li>
+<li>Motion decays exponentially without oscillation.</li>
+<li><em>Critically Damped</em> ($ b^2 = 4 \omega_0^2 $):</li>
+<li>Repeated root <span class="arithmatex">\( r = -\frac{b}{2} \)</span>.</li>
+<li>Solution:
+    $$
+    \theta(t) = (A + B t) e^{-\frac{b}{2} t}
+    $$</li>
+<li>Fastest return to equilibrium without oscillating.</li>
+<li><em>Underdamped</em> ($ b^2 &lt; 4 \omega_0^2 $):</li>
+<li>Complex roots <span class="arithmatex">\( r = -\gamma \pm i \omega \)</span>, where:<ul>
+<li>$ \gamma = \frac{b}{2} $ (damping factor, s⁻¹)</li>
+<li>$ \omega = \sqrt{\omega_0^2 - \gamma^2} $ (damped frequency, rad/s)</li>
+</ul>
 </li>
+<li>Solution:
+    $$
+    \theta(t) = C e^{-\gamma t} \cos(\omega t + \phi)
+    $$</li>
+<li>Oscillatory motion with exponentially decaying amplitude.</li>
 </ul>
-<h3 id="nonlinear-case">Nonlinear Case</h3>
-<p>The full equation with $ \sin(\theta) $ is nonlinear and requires numerical methods for exact solutions, though perturbation techniques can approximate behavior.</p>
-<h2 id="numerical-simulation">Numerical Simulation</h2>
-<h3 id="example-experiment">Example experiment</h3>
+</li>
+<li>
+<p><strong>Additional Variables</strong>:</p>
+</li>
+<li>$ \theta' $: Angular velocity (radians per second, rad/s)</li>
+<li>$ \theta'' $: Angular acceleration (radians per second squared, rad/s²)</li>
+<li>
+<p>$ T $: Damped period (seconds, s), $ T = \frac{2\pi}{\omega} $</p>
+</li>
+<li>
+<p><strong>Nonlinear Case</strong>:</p>
+</li>
+<li>The full equation $ \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = 0 $ is nonlinear due to $ \sin(\theta) $.</li>
+<li>Analytical solutions are not feasible for large angles; numerical methods (e.g., Runge-Kutta) are required to capture the true dynamics.</li>
+</ul>
+<h3 id="vizualization-available-in-my-colab">Vizualization available in my colab</h3>
+<p><a href="https://colab.research.google.com/drive/14HV1BIjMX1YDGW0z-BtBkJoUXG2uz6u2#scrollTo=_k1Bu9c5w4-S">Simulation of several pendulum in my colab</a></p>
+<h2 id="4-results-analysis">4. Results Analysis</h2>
 <ul>
-<li><strong>Parameters</strong>:</li>
-<li>$ b $: Test 0.5 s⁻¹ (underdamped), $ 2\sqrt{\frac{g}{L}} $ (critical), 10 s⁻¹ (overdamped).</li>
-<li>$ A $: Vary from 0.1 to 5 m/s².</li>
-<li>$ \omega_f $: Sweep around $ \omega_0 $ (e.g., 1 to 5 rad/s).</li>
-<li>Initial conditions: $ \theta_0 = \frac{\pi}{4} $ rad, $ \theta'_0 = 0 $ rad/s.</li>
-<li><strong>Plots</strong>:</li>
-<li>$ \theta(t) $ vs. $ t $: Time series for different cases.</li>
-<li>$ \theta $ vs. $ \theta' $: Phase space to detect limit cycles or chaos.</li>
-<li>Amplitude vs. $ \omega_f $: Resonance curve.</li>
+<li><strong>Comparison of Damping Regimes</strong>:</li>
+<li><em>Underdamped</em>:<ul>
+<li>Oscillates with decaying amplitude.</li>
+<li>Damped period $ T = \frac{2\pi}{\omega} $ slightly longer than undamped $ T_0 = 2\pi \sqrt{\frac{L}{g}} $.</li>
 </ul>
-<h2 id="experimental-setup-if-applicable">Experimental Setup (If Applicable)</h2>
+</li>
+<li><em>Critically Damped</em>:<ul>
+<li>Returns to $ \theta = 0 $ fastest without oscillation.</li>
+<li>Optimal damping for stability.</li>
+</ul>
+</li>
+<li>
+<p><em>Overdamped</em>:</p>
 <ul>
-<li><strong>Design</strong>: Attach a mass to a string (length $ L $), with a motor applying $ A \cos(\omega_f t) $ and a damper (e.g., vane) for $ b $.</li>
-<li><strong>Measurements</strong>: Use a motion sensor to track $ \theta(t) $, varying $ A $ and $ \omega_f $.</li>
-<li><strong>Challenges</strong>: Nonlinear effects at large $ \theta $, external disturbances.</li>
+<li>Slow, monotonic decay to $ \theta = 0 $ without oscillation.</li>
+<li>Excessive damping delays equilibrium.</li>
 </ul>
-<h2 id="results-and-discussion">Results and Discussion</h2>
-<ul>
-<li><strong>Findings</strong>:</li>
-<li>Damping reduces resonance amplitude and shifts steady-state behavior.</li>
-<li>Large $ A $ can induce chaos, seen as irregular $ \theta(t) $.</li>
-<li>Transients decay faster with higher $ b $.</li>
-<li><strong>Comparisons</strong>: Linear theory holds for small $ \theta $; nonlinear simulation reveals chaos.</li>
-<li><strong>Insights</strong>: Resonance depends on $ \omega_f / \omega_0 $; chaos requires strong forcing.</li>
+</li>
+<li>
+<p><strong>Energy Dissipation</strong>:</p>
+</li>
+<li>Damping coefficient $ b $ controls the rate of energy loss.</li>
+<li>Underdamped: Energy dissipates gradually via oscillations.</li>
+<li>
+<p>Critically/overdamped: Energy dissipates directly to zero.</p>
+</li>
+<li>
+<p><strong>Validation</strong>:</p>
+</li>
+<li>Compare simulated decay rate $ e^{-\gamma t} $ (where $ \gamma = \frac{b}{2} $) to theoretical predictions.</li>
+<li>Check period $ T = \frac{2\pi}{\sqrt{\omega_0^2 - \left(\frac{b}{2}\right)^2}} $ in underdamped case.</li>
 </ul>
-<h2 id="conclusion">Conclusion</h2>
-<p>The forced damped pendulum balances energy input and loss, exhibiting resonance, steady oscillations, or chaos depending on $ b $, $ A $, and $ \omega_f $. This has implications for engineering (e.g., vibration control) and physics (e.g., nonlinear systems). Future work could explore chaotic regimes or stochastic forcing.</p>
-<p><a href="https://colab.research.google.com/drive/14HV1BIjMX1YDGW0z-BtBkJoUXG2uz6u2?usp=sharing">Simulation in collab</a></p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
