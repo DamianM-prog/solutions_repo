@@ -48,12 +48,12 @@
       $$
 
 - **Parameters with Units**:
-  - $ \theta $: Angular displacement (radians, rad)
-  - $ t $: Time (seconds, s)
-  - $ b $: Damping coefficient (per second, s⁻¹)
-  - $ g $: Gravitational acceleration (meters per second squared, m/s²)
-  - $ L $: Pendulum length (meters, m)
-  - $ \omega_0 $: Natural frequency (radians per second, rad/s), $ \omega_0 = \sqrt{\frac{g}{L}} $
+  - $\theta$: Angular displacement (radians, rad)
+  - $t$: Time (seconds, s)
+  - $b$: Damping coefficient (per second, s⁻¹)
+  - $g$: Gravitational acceleration (meters per second squared, m/s²)
+  - $L$: Pendulum length (meters, m)
+  - $\omega_0$: Natural frequency (radians per second, rad/s), $\omega_0 = \sqrt{\frac{g}{L}}$
 
   ![alt text](image-4.png)
 
