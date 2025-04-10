@@ -5,6 +5,11 @@
 - **Definition of a Damped Pendulum**:
   - A damped pendulum consists of a mass oscillating under gravity, attached to a pivot via a massless string or rod.
   - Unlike an ideal pendulum, it experiences energy dissipation due to damping forces (e.g., friction at the pivot or air resistance), causing the amplitude to decrease over time.
+
+
+  ![alt text](image-5.png)
+
+
 - **Goal of the Analysis**:
   - To investigate how damping alters the pendulum’s motion compared to the undamped case.
   - To explore this through:
@@ -154,6 +159,16 @@
 - **Key Concept**: The Coriolis effect causes the plane of oscillation to precess, with a period dependent on latitude (\( $T = \frac{24}{\sin(\lambda)}$ \) hours, where \( $\lambda$ \) is latitude).
 - **Famous Example**: Installed in the Panthéon in Paris by Léon Foucault in 1851, it provided visual proof of Earth's rotation.
 
+These examples show how pendulums bridge theory and practice, from everyday tools to cutting-edge engineering solutions.
+
 ---
 
-These examples show how pendulums bridge theory and practice, from everyday tools to cutting-edge engineering solutions.
+## Comparing different scenarios
+
+### Angle versus time.
+
+![alt text](image-6.png)
+
+### Phase diagrams.
+
+![alt text](image-7.png)
