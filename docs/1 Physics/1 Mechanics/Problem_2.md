@@ -26,14 +26,14 @@
     \frac{d^2 \theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0
     $$
   - **Small-Angle Approximation**:
-    - For small $ \theta $, $ \sin(\theta) \approx \theta $, simplifying to:
+    - For small $\theta$, $\sin(\theta) \approx \theta$, simplifying to:
       $$
       \frac{d^2 \theta}{dt^2} + \omega_0^2 \theta = 0
       $$
     - Where $ \omega_0 = \sqrt{\frac{g}{L}} $ is the natural angular frequency.
   - **Solution**:
-    - Harmonic motion: $ \theta(t) = \theta_0 \cos(\omega_0 t + \phi) $.
-    - Period: $ T = 2\pi \sqrt{\frac{L}{g}} $.
+    - Harmonic motion: $\theta(t) = \theta_0 \cos(\omega_0 t + \phi)$.
+    - Period: $T = 2\pi \sqrt{\frac{L}{g}}$.
 
 - **Damped Pendulum**:
   - Introduces energy loss through damping.
@@ -42,7 +42,7 @@
     \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = 0
     $$
   - **Linear Approximation**:
-    - For small $ \theta $, $ \sin(\theta) \approx \theta $, yielding:
+    - For small $\theta$, $\sin(\theta) \approx \theta$, yielding:
       $$
       \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \omega_0^2 \theta = 0
       $$
@@ -65,26 +65,26 @@
     r^2 + b r + \omega_0^2 = 0
     $$
   - **Roots**:
-    - $ r = \frac{-b \pm \sqrt{b^2 - 4 \omega_0^2}}{2} $
+    - $r = \frac{-b \pm \sqrt{b^2 - 4 \omega_0^2}}{2}$
   - **Damping Regimes**:
-    - *Overdamped* ($ b^2 > 4 \omega_0^2 $):
+    - *Overdamped* ($b^2 > 4 \omega_0^2$):
       - Real, distinct roots \( r_1 \) and \( r_2 \).
       - Solution:
         $$
         \theta(t) = A e^{r_1 t} + B e^{r_2 t}
         $$
       - Motion decays exponentially without oscillation.
-    - *Critically Damped* ($ b^2 = 4 \omega_0^2 $):
+    - *Critically Damped* ($b^2 = 4 \omega_0^2$):
       - Repeated root \( r = -\frac{b}{2} \).
       - Solution:
         $$
         \theta(t) = (A + B t) e^{-\frac{b}{2} t}
         $$
       - Fastest return to equilibrium without oscillating.
-    - *Underdamped* ($ b^2 < 4 \omega_0^2 $):
+    - *Underdamped* ($b^2 < 4 \omega_0^2$):
       - Complex roots \( r = -\gamma \pm i \omega \), where:
-        - $ \gamma = \frac{b}{2} $ (damping factor, s⁻¹)
-        - $ \omega = \sqrt{\omega_0^2 - \gamma^2} $ (damped frequency, rad/s)
+        - $\gamma = \frac{b}{2}$ (damping factor, s⁻¹)
+        - $\omega = \sqrt{\omega_0^2 - \gamma^2}$ (damped frequency, rad/s)
       - Solution:
         $$
         \theta(t) = C e^{-\gamma t} \cos(\omega t + \phi)
@@ -92,12 +92,12 @@
       - Oscillatory motion with exponentially decaying amplitude.
 
 - **Additional Variables**:
-  - $ \theta' $: Angular velocity (radians per second, rad/s)
-  - $ \theta'' $: Angular acceleration (radians per second squared, rad/s²)
-  - $ T $: Damped period (seconds, s), $ T = \frac{2\pi}{\omega} $
+  - $\theta'$: Angular velocity (radians per second, rad/s)
+  - $\theta''$: Angular acceleration (radians per second squared, rad/s²)
+  - $T$: Damped period (seconds, s), $T = \frac{2\pi}{\omega}$
 
 - **Nonlinear Case**:
-  - The full equation $ \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = 0 $ is nonlinear due to $ \sin(\theta) $.
+  - The full equation $\frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = 0$ is nonlinear due to $\sin(\theta)$.
   - Analytical solutions are not feasible for large angles; numerical methods (e.g., Runge-Kutta) are required to capture the true dynamics.
 
 ### Vizualization available in my colab
@@ -108,12 +108,12 @@
 - **Comparison of Damping Regimes**:
   - *Underdamped*:
     - Oscillates with decaying amplitude.
-    - Damped period $ T = \frac{2\pi}{\omega} $ slightly longer than undamped $ T_0 = 2\pi \sqrt{\frac{L}{g}} $.
+    - Damped period $T = \frac{2\pi}{\omega}$ slightly longer than undamped $T_0 = 2\pi \sqrt{\frac{L}{g}}$.
   - *Critically Damped*:
-    - Returns to $ \theta = 0 $ fastest without oscillation.
+    - Returns to $\theta = 0$ fastest without oscillation.
     - Optimal damping for stability.
   - *Overdamped*:
-    - Slow, monotonic decay to $ \theta = 0 $ without oscillation.
+    - Slow, monotonic decay to $\theta = 0$ without oscillation.
     - Excessive damping delays equilibrium.
 
 - **Energy Dissipation**:
@@ -122,6 +122,6 @@
   - Critically/overdamped: Energy dissipates directly to zero.
 
 - **Validation**:
-  - Compare simulated decay rate $ e^{-\gamma t} $ (where $ \gamma = \frac{b}{2} $) to theoretical predictions.
-  - Check period $ T = \frac{2\pi}{\sqrt{\omega_0^2 - \left(\frac{b}{2}\right)^2}} $ in underdamped case.
+  - Compare simulated decay rate $e^{-\gamma t}$ (where $\gamma = \frac{b}{2}$) to theoretical predictions.
+  - Check period $T = \frac{2\pi}{\sqrt{\omega_0^2 - \left(\frac{b}{2}\right)^2}}$ in underdamped case.
   
