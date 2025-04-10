@@ -68,21 +68,21 @@
     - $r = \frac{-b \pm \sqrt{b^2 - 4 \omega_0^2}}{2}$
   - **Damping Regimes**:
     - *Overdamped* ($b^2 > 4 \omega_0^2$):
-      - Real, distinct roots \( r_1 \) and \( r_2 \).
+      - Real, distinct roots \( $r_1$ \) and \( $r_2$ \).
       - Solution:
         $$
         \theta(t) = A e^{r_1 t} + B e^{r_2 t}
         $$
       - Motion decays exponentially without oscillation.
     - *Critically Damped* ($b^2 = 4 \omega_0^2$):
-      - Repeated root \( r = -\frac{b}{2} \).
+      - Repeated root \( $r = -\frac{b}{2}$ \).
       - Solution:
         $$
         \theta(t) = (A + B t) e^{-\frac{b}{2} t}
         $$
       - Fastest return to equilibrium without oscillating.
     - *Underdamped* ($b^2 < 4 \omega_0^2$):
-      - Complex roots \( r = -\gamma \pm i \omega \), where:
+      - Complex roots \( $r = -\gamma \pm i \omega$ \), where:
         - $\gamma = \frac{b}{2}$ (damping factor, s⁻¹)
         - $\omega = \sqrt{\omega_0^2 - \gamma^2}$ (damped frequency, rad/s)
       - Solution:
