@@ -102,7 +102,9 @@
 
 ### Vizualization available in my colab
 
-[Simulation of several pendulum in my colab](https://colab.research.google.com/drive/14HV1BIjMX1YDGW0z-BtBkJoUXG2uz6u2#scrollTo=_k1Bu9c5w4-S)
+[Graphs of several pendulum in my colab](https://colab.research.google.com/drive/14HV1BIjMX1YDGW0z-BtBkJoUXG2uz6u2#scrollTo=_k1Bu9c5w4-S)
+
+[Website to see how a pendulum works with adjustable settings](https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_all.html)
 ## 4. Results Analysis
 
 - **Comparison of Damping Regimes**:
@@ -125,3 +127,33 @@
   - Compare simulated decay rate $e^{-\gamma t}$ (where $\gamma = \frac{b}{2}$) to theoretical predictions.
   - Check period $T = \frac{2\pi}{\sqrt{\omega_0^2 - \left(\frac{b}{2}\right)^2}}$ in underdamped case.
   
+# 5. Real world applications
+
+### 1. Timekeeping (Grandfather Clocks)
+- **Description**: A pendulum is used in mechanical clocks, such as grandfather clocks, to regulate time. The consistent period of a pendulum's swing, determined by its length and gravity, makes it an effective timekeeper.
+- **Key Concept**: The period \( $T = 2\pi \sqrt{\frac{L}{g}}$\) (where \( $L $\) is length and \( $g$ \) is gravitational acceleration) remains nearly constant for small angles, enabling precise time measurement.
+- **Historical Note**: Galileo Galilei observed this property in the 16th century, and Christiaan Huygens later perfected pendulum clocks in 1656.
+
+### 2. Seismology (Seismometers)
+- **Description**: Early seismometers used pendulums to detect ground motion caused by earthquakes. A suspended mass (acting as a pendulum) remains stationary relative to a moving frame, recording vibrations.
+- **Key Concept**: The pendulum's inertia allows it to measure acceleration changes, with damping used to analyze the amplitude and frequency of seismic waves.
+- **Modern Use**: While basic designs have evolved, the principle inspires inertial sensors in modern seismology.
+
+### 3. Physics Education (Damped and Driven Oscillations)
+- **Description**: Pendulums are a staple in physics labs to demonstrate harmonic motion, damping, and resonance. For example, a damped pendulum (like in your code) shows underdamped, critically damped, and overdamped behavior.
+- **Key Concept**: The equation \($\ddot{\theta} + b\dot{\theta} + \frac{g}{L}\sin(\theta) = 0$\) models real-world energy loss, teaching students about differential equations and oscillatory systems.
+- **Application**: Helps visualize theoretical concepts like phase space and energy dissipation.
+
+### 4. Structural Engineering (Tuned Mass Dampers)
+- **Description**: Tall buildings and bridges use pendulum-like devices called tuned mass dampers (TMDs) to reduce vibrations from wind or earthquakes. A heavy mass oscillates out of phase with the structure's motion.
+- **Key Concept**: The pendulum's natural frequency is tuned to match the structure’s, counteracting sway (e.g., Taipei 101’s 660-ton TMD).
+- **Benefit**: Enhances safety and comfort in skyscrapers by mimicking a damped pendulum’s energy absorption.
+
+### 5. Gravitational Experiments (Foucault Pendulum)
+- **Description**: The Foucault Pendulum demonstrates Earth's rotation. A long pendulum swings in a fixed plane while the Earth rotates beneath it, shifting its apparent path.
+- **Key Concept**: The Coriolis effect causes the plane of oscillation to precess, with a period dependent on latitude (\( $T = \frac{24}{\sin(\lambda)}$ \) hours, where \( $\lambda$ \) is latitude).
+- **Famous Example**: Installed in the Panthéon in Paris by Léon Foucault in 1851, it provided visual proof of Earth's rotation.
+
+---
+
+These examples show how pendulums bridge theory and practice, from everyday tools to cutting-edge engineering solutions.
