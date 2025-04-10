@@ -214,7 +214,7 @@
     \frac{d^2 \theta}{dt^2} + \frac{g}{L} \sin(\theta) = 0
     $$</li>
 <li><strong>Small-Angle Approximation</strong>:<ul>
-<li>For small $ \theta $, $ \sin(\theta) \approx \theta $, simplifying to:
+<li>For small <span class="arithmatex">\(\theta\)</span>, <span class="arithmatex">\(\sin(\theta) \approx \theta\)</span>, simplifying to:
   $$
   \frac{d^2 \theta}{dt^2} + \omega_0^2 \theta = 0
   $$</li>
@@ -224,8 +224,8 @@
 <li>
 <p><strong>Solution</strong>:</p>
 <ul>
-<li>Harmonic motion: $ \theta(t) = \theta_0 \cos(\omega_0 t + \phi) $.</li>
-<li>Period: $ T = 2\pi \sqrt{\frac{L}{g}} $.</li>
+<li>Harmonic motion: <span class="arithmatex">\(\theta(t) = \theta_0 \cos(\omega_0 t + \phi)\)</span>.</li>
+<li>Period: <span class="arithmatex">\(T = 2\pi \sqrt{\frac{L}{g}}\)</span>.</li>
 </ul>
 </li>
 <li>
@@ -239,7 +239,7 @@
 <li>
 <p><strong>Linear Approximation</strong>:</p>
 <ul>
-<li>For small $ \theta $, $ \sin(\theta) \approx \theta $, yielding:
+<li>For small <span class="arithmatex">\(\theta\)</span>, <span class="arithmatex">\(\sin(\theta) \approx \theta\)</span>, yielding:
   $$
   \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \omega_0^2 \theta = 0
   $$</li>
@@ -264,30 +264,30 @@
     r^2 + b r + \omega_0^2 = 0
     $$</li>
 <li><strong>Roots</strong>:<ul>
-<li>$ r = \frac{-b \pm \sqrt{b^2 - 4 \omega_0^2}}{2} $</li>
+<li><span class="arithmatex">\(r = \frac{-b \pm \sqrt{b^2 - 4 \omega_0^2}}{2}\)</span></li>
 </ul>
 </li>
 <li>
 <p><strong>Damping Regimes</strong>:</p>
 <ul>
-<li><em>Overdamped</em> ($ b^2 &gt; 4 \omega_0^2 $):</li>
+<li><em>Overdamped</em> (<span class="arithmatex">\(b^2 &gt; 4 \omega_0^2\)</span>):</li>
 <li>Real, distinct roots <span class="arithmatex">\( r_1 \)</span> and <span class="arithmatex">\( r_2 \)</span>.</li>
 <li>Solution:
     $$
     \theta(t) = A e^{r_1 t} + B e^{r_2 t}
     $$</li>
 <li>Motion decays exponentially without oscillation.</li>
-<li><em>Critically Damped</em> ($ b^2 = 4 \omega_0^2 $):</li>
+<li><em>Critically Damped</em> (<span class="arithmatex">\(b^2 = 4 \omega_0^2\)</span>):</li>
 <li>Repeated root <span class="arithmatex">\( r = -\frac{b}{2} \)</span>.</li>
 <li>Solution:
     $$
     \theta(t) = (A + B t) e^{-\frac{b}{2} t}
     $$</li>
 <li>Fastest return to equilibrium without oscillating.</li>
-<li><em>Underdamped</em> ($ b^2 &lt; 4 \omega_0^2 $):</li>
+<li><em>Underdamped</em> (<span class="arithmatex">\(b^2 &lt; 4 \omega_0^2\)</span>):</li>
 <li>Complex roots <span class="arithmatex">\( r = -\gamma \pm i \omega \)</span>, where:<ul>
-<li>$ \gamma = \frac{b}{2} $ (damping factor, s⁻¹)</li>
-<li>$ \omega = \sqrt{\omega_0^2 - \gamma^2} $ (damped frequency, rad/s)</li>
+<li><span class="arithmatex">\(\gamma = \frac{b}{2}\)</span> (damping factor, s⁻¹)</li>
+<li><span class="arithmatex">\(\omega = \sqrt{\omega_0^2 - \gamma^2}\)</span> (damped frequency, rad/s)</li>
 </ul>
 </li>
 <li>Solution:
@@ -300,15 +300,15 @@
 <li>
 <p><strong>Additional Variables</strong>:</p>
 </li>
-<li>$ \theta' $: Angular velocity (radians per second, rad/s)</li>
-<li>$ \theta'' $: Angular acceleration (radians per second squared, rad/s²)</li>
+<li><span class="arithmatex">\(\theta'\)</span>: Angular velocity (radians per second, rad/s)</li>
+<li><span class="arithmatex">\(\theta''\)</span>: Angular acceleration (radians per second squared, rad/s²)</li>
 <li>
-<p>$ T $: Damped period (seconds, s), $ T = \frac{2\pi}{\omega} $</p>
+<p><span class="arithmatex">\(T\)</span>: Damped period (seconds, s), <span class="arithmatex">\(T = \frac{2\pi}{\omega}\)</span></p>
 </li>
 <li>
 <p><strong>Nonlinear Case</strong>:</p>
 </li>
-<li>The full equation $ \frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = 0 $ is nonlinear due to $ \sin(\theta) $.</li>
+<li>The full equation <span class="arithmatex">\(\frac{d^2 \theta}{dt^2} + b \frac{d \theta}{dt} + \frac{g}{L} \sin(\theta) = 0\)</span> is nonlinear due to <span class="arithmatex">\(\sin(\theta)\)</span>.</li>
 <li>Analytical solutions are not feasible for large angles; numerical methods (e.g., Runge-Kutta) are required to capture the true dynamics.</li>
 </ul>
 <h3 id="vizualization-available-in-my-colab">Vizualization available in my colab</h3>
@@ -318,18 +318,18 @@
 <li><strong>Comparison of Damping Regimes</strong>:</li>
 <li><em>Underdamped</em>:<ul>
 <li>Oscillates with decaying amplitude.</li>
-<li>Damped period $ T = \frac{2\pi}{\omega} $ slightly longer than undamped $ T_0 = 2\pi \sqrt{\frac{L}{g}} $.</li>
+<li>Damped period <span class="arithmatex">\(T = \frac{2\pi}{\omega}\)</span> slightly longer than undamped <span class="arithmatex">\(T_0 = 2\pi \sqrt{\frac{L}{g}}\)</span>.</li>
 </ul>
 </li>
 <li><em>Critically Damped</em>:<ul>
-<li>Returns to $ \theta = 0 $ fastest without oscillation.</li>
+<li>Returns to <span class="arithmatex">\(\theta = 0\)</span> fastest without oscillation.</li>
 <li>Optimal damping for stability.</li>
 </ul>
 </li>
 <li>
 <p><em>Overdamped</em>:</p>
 <ul>
-<li>Slow, monotonic decay to $ \theta = 0 $ without oscillation.</li>
+<li>Slow, monotonic decay to <span class="arithmatex">\(\theta = 0\)</span> without oscillation.</li>
 <li>Excessive damping delays equilibrium.</li>
 </ul>
 </li>
@@ -344,8 +344,8 @@
 <li>
 <p><strong>Validation</strong>:</p>
 </li>
-<li>Compare simulated decay rate $ e^{-\gamma t} $ (where $ \gamma = \frac{b}{2} $) to theoretical predictions.</li>
-<li>Check period $ T = \frac{2\pi}{\sqrt{\omega_0^2 - \left(\frac{b}{2}\right)^2}} $ in underdamped case.</li>
+<li>Compare simulated decay rate <span class="arithmatex">\(e^{-\gamma t}\)</span> (where <span class="arithmatex">\(\gamma = \frac{b}{2}\)</span>) to theoretical predictions.</li>
+<li>Check period <span class="arithmatex">\(T = \frac{2\pi}{\sqrt{\omega_0^2 - \left(\frac{b}{2}\right)^2}}\)</span> in underdamped case.</li>
 </ul>
 </div>
 </div><footer>
