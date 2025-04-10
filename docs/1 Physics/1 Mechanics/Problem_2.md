@@ -30,7 +30,7 @@
       $$
       \frac{d^2 \theta}{dt^2} + \omega_0^2 \theta = 0
       $$
-    - Where $ \omega_0 = \sqrt{\frac{g}{L}} $ is the natural angular frequency.
+    - Where $\omega_0 = \sqrt{\frac{g}{L}}$ is the natural angular frequency.
   - **Solution**:
     - Harmonic motion: $\theta(t) = \theta_0 \cos(\omega_0 t + \phi)$.
     - Period: $T = 2\pi \sqrt{\frac{L}{g}}$.
@@ -117,7 +117,7 @@
     - Excessive damping delays equilibrium.
 
 - **Energy Dissipation**:
-  - Damping coefficient $ b $ controls the rate of energy loss.
+  - Damping coefficient $b$ controls the rate of energy loss.
   - Underdamped: Energy dissipates gradually via oscillations.
   - Critically/overdamped: Energy dissipates directly to zero.
 
