@@ -54,20 +54,27 @@ $k$: Proportionality constant ($s^2 m^{-3}$)
 
 Verification with Planetary Data
 
-Planets: Mercury ($r = 0.387098$ AU, $T = 0.240846$ yr), Venus ($r = 0.723332$ AU, $T = 0.615198$ yr), Earth ($r = 1.000000$ AU, $T = 1.000000$ yr), Mars ($r = 1.523680$ AU, $T = 1.88082$ yr).
+Planets: 
+Mercury ($r = 0.387098$ AU, $T = 0.240846$ yr), 
+
+Venus ($r = 0.723332$ AU, $T = 0.615198$ yr), 
+
+Earth ($r = 1.000000$ AU, $T = 1.000000$ yr), 
+
+Mars ($r = 1.523680$ AU, $T = 1.88082$ yr).
 
 Unit Conversion:  
 $1$ AU = $1.496 \times 10^{11}$ m.  
 $1$ yr = $3.15576 \times 10^7$ s.
 
 
-Data: Compute $T^2$ (in $s^2$) and $r^3$ (in $m^3$) for each planet to verify $T^2 \propto r^3$.
-
-$T^2$ vs $r^3$ Plot
-
-A plot of $T^2$ vs $r^3$ for Mercury, Venus, Earth, and Mars yields a straight line, confirming $T^2 = k r^3$.
+### A plot of $T^2$ vs $r^3$ for Mercury, Venus, Earth, and Mars yields a straight line, confirming $T^2 = k r^3$.
 
 ![alt text](image.png)
+
+### Here is a Log-Log plot in Comparison
+
+![alt text](image-1.png)
 
 The straight line confirms the proportionality, unlike incorrect $T^2$ vs $r$ plots.
 
@@ -86,7 +93,9 @@ $G$: Gravitational constant ($m^3 kg^{-1} s^{-2}$)
 ## Calculate Mass of Earth
 
 Using Geostationary Satellite:  
+
 $r = 42,164 \times 10^3$ m, $T = 24 \times 3600 = 86,400$ s.  
+
 Formula: $$ M = \frac{4\pi^2 r^3}{G T^2} $$  
 Calculation:$$ M_{\text{Earth}} = \frac{4 \pi^2 (42,164 \times 10^3)^3}{6.67430 \times 10^{-11} (86,400)^2} \approx 5.972 \times 10^{24} , \text{kg} $$  
 Result: Mass of Earth = $5.97 \times 10^{24}$ kg.
