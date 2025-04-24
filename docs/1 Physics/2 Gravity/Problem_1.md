@@ -1,6 +1,10 @@
-# Analysis of the Relationship Between $T^2$ and $r^3$ in Circular Motion and Its Implications for Astronomy
+# Problem 1
 
-### Gravitational Force: Governed by Newton’s Universal Law of Gravitation:$$ F = \frac{G M m}{r^2} $$Symbols:  
+## Analysis of the Relationship Between $T^2$ and $r^3$ in Circular Motion and Its Implications for Astronomy
+
+### Gravitational Force:
+
+Gravitational force is governed by Newton’s Universal Law of Gravitation:$$ F = \frac{G M m}{r^2} $$Symbols:  
 $F$: Gravitational force (N)  
 $G$: Gravitational constant ($m^3 kg^{-1} s^{-2}$)  
 $M$: Mass of the central body (kg)  
