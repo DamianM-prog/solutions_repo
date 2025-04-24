@@ -14,13 +14,26 @@ Other symbols as defined above.
 
 ### Derivation of $T^2$ Kepler Formula
 
-Step 1: Orbital velocity for circular motion is the circumference divided by the period:$$ v = \frac{2\pi r}{T} $$Symbols:  
+Step 1: Orbital velocity for circular motion is the circumference divided by the period:$$v = \frac{2\pi r}{T}$$
+
+Symbols:  
 $v$: Orbital velocity ($m s^{-1}$)  
 $r$: Orbital radius (m)  
 $T$: Orbital period (s)
 
 
-Step 2: Substitute $v$ into the centripetal force equation: $$\frac{m \left(\frac{2\pi r}{T}\right)^2}{r} = \frac{G M m}{r^2}$$ Simplify: $$\frac{m \cdot 4\pi^2 r^2}{T^2 r} = \frac{G M m}{r^2}$$ $$\frac{4\pi^2 r}{T^2} = \frac{G M}{r^2}$$ Symbols:  
+Step 2: Substitute $v$ into the centripetal force equation: 
+
+
+$$\frac{m \left(\frac{2\pi r}{T}\right)^2}{r} = \frac{G M m}{r^2}$$ 
+
+Simplify: 
+
+$$\frac{m \cdot 4\pi^2 r^2}{T^2 r} = \frac{G M m}{r^2}$$ 
+
+$$\frac{4\pi^2 r}{T^2} = \frac{G M}{r^2}$$
+
+Symbols:  
 $m$: Mass of the orbiting body (kg)  
 $G$: Gravitational constant ($m^3 kg^{-1} s^{-2}$)  
 $M$: Mass of the central body (kg)  
