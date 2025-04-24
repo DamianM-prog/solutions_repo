@@ -62,6 +62,10 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#derivation-of-t2-kepler-formula">Derivation of \(T^2\) Kepler Formula</a>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#a-plot-of-t2-vs-r3-for-mercury-venus-earth-and-mars-yields-a-straight-line-confirming-t2-k-r3">A plot of \(T^2\) vs \(r^3\) for Mercury, Venus, Earth, and Mars yields a straight line, confirming \(T^2 = k r^3\).</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#here-is-a-log-log-plot-in-comparison">Here is a Log-Log plot in Comparison</a>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#calculate-mass-of-the-sun">Calculate Mass of the Sun</a>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#calculate-mass-of-earth">Calculate Mass of Earth</a>
@@ -224,14 +228,18 @@ Other symbols as defined above.</p>
 <span class="arithmatex">\(M\)</span>: Mass of the central body (kg)<br/>
 <span class="arithmatex">\(k\)</span>: Proportionality constant (<span class="arithmatex">\(s^2 m^{-3}\)</span>)</p>
 <p>Verification with Planetary Data</p>
-<p>Planets: Mercury (<span class="arithmatex">\(r = 0.387098\)</span> AU, <span class="arithmatex">\(T = 0.240846\)</span> yr), Venus (<span class="arithmatex">\(r = 0.723332\)</span> AU, <span class="arithmatex">\(T = 0.615198\)</span> yr), Earth (<span class="arithmatex">\(r = 1.000000\)</span> AU, <span class="arithmatex">\(T = 1.000000\)</span> yr), Mars (<span class="arithmatex">\(r = 1.523680\)</span> AU, <span class="arithmatex">\(T = 1.88082\)</span> yr).</p>
+<p>Planets: 
+Mercury (<span class="arithmatex">\(r = 0.387098\)</span> AU, <span class="arithmatex">\(T = 0.240846\)</span> yr), </p>
+<p>Venus (<span class="arithmatex">\(r = 0.723332\)</span> AU, <span class="arithmatex">\(T = 0.615198\)</span> yr), </p>
+<p>Earth (<span class="arithmatex">\(r = 1.000000\)</span> AU, <span class="arithmatex">\(T = 1.000000\)</span> yr), </p>
+<p>Mars (<span class="arithmatex">\(r = 1.523680\)</span> AU, <span class="arithmatex">\(T = 1.88082\)</span> yr).</p>
 <p>Unit Conversion:<br/>
 <span class="arithmatex">\(1\)</span> AU = <span class="arithmatex">\(1.496 \times 10^{11}\)</span> m.<br/>
 <span class="arithmatex">\(1\)</span> yr = <span class="arithmatex">\(3.15576 \times 10^7\)</span> s.</p>
-<p>Data: Compute <span class="arithmatex">\(T^2\)</span> (in <span class="arithmatex">\(s^2\)</span>) and <span class="arithmatex">\(r^3\)</span> (in <span class="arithmatex">\(m^3\)</span>) for each planet to verify <span class="arithmatex">\(T^2 \propto r^3\)</span>.</p>
-<p><span class="arithmatex">\(T^2\)</span> vs <span class="arithmatex">\(r^3\)</span> Plot</p>
-<p>A plot of <span class="arithmatex">\(T^2\)</span> vs <span class="arithmatex">\(r^3\)</span> for Mercury, Venus, Earth, and Mars yields a straight line, confirming <span class="arithmatex">\(T^2 = k r^3\)</span>.</p>
+<h3 id="a-plot-of-t2-vs-r3-for-mercury-venus-earth-and-mars-yields-a-straight-line-confirming-t2-k-r3">A plot of <span class="arithmatex">\(T^2\)</span> vs <span class="arithmatex">\(r^3\)</span> for Mercury, Venus, Earth, and Mars yields a straight line, confirming <span class="arithmatex">\(T^2 = k r^3\)</span>.</h3>
 <p><img alt="alt text" src="../image.png"/></p>
+<h3 id="here-is-a-log-log-plot-in-comparison">Here is a Log-Log plot in Comparison</h3>
+<p><img alt="alt text" src="../image-1.png"/></p>
 <p>The straight line confirms the proportionality, unlike incorrect <span class="arithmatex">\(T^2\)</span> vs <span class="arithmatex">\(r\)</span> plots.</p>
 <h2 id="calculate-mass-of-the-sun">Calculate Mass of the Sun</h2>
 <p>Using Earth’s Orbit:<br/>
@@ -244,9 +252,9 @@ Result: Mass of the Sun = <span class="arithmatex">\(1.99 \times 10^{30}\)</span
 <span class="arithmatex">\(T\)</span>: Orbital period (s)<br/>
 <span class="arithmatex">\(G\)</span>: Gravitational constant (<span class="arithmatex">\(m^3 kg^{-1} s^{-2}\)</span>)</p>
 <h2 id="calculate-mass-of-earth">Calculate Mass of Earth</h2>
-<p>Using Geostationary Satellite:<br/>
-<span class="arithmatex">\(r = 42,164 \times 10^3\)</span> m, <span class="arithmatex">\(T = 24 \times 3600 = 86,400\)</span> s.<br/>
-Formula: $$ M = \frac{4\pi^2 r^3}{G T^2} $$<br/>
+<p>Using Geostationary Satellite:  </p>
+<p><span class="arithmatex">\(r = 42,164 \times 10^3\)</span> m, <span class="arithmatex">\(T = 24 \times 3600 = 86,400\)</span> s.  </p>
+<p>Formula: $$ M = \frac{4\pi^2 r^3}{G T^2} $$<br/>
 Calculation:$$ M_{\text{Earth}} = \frac{4 \pi^2 (42,164 \times 10^3)^3}{6.67430 \times 10^{-11} (86,400)^2} \approx 5.972 \times 10^{24} , \text{kg} $$<br/>
 Result: Mass of Earth = <span class="arithmatex">\(5.97 \times 10^{24}\)</span> kg.</p>
 <p>Symbols:<br/>
