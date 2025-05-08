@@ -22,6 +22,16 @@ Solving for $v_e$:
 
 $$ v_e = \sqrt{\frac{2 G M}{r}}. $$
 
+Symbol Definitions and Units:
+
+ - $v_e$: Escape velocity, the speed needed to escape a celestial body’s gravity. Unit: $\text{m/s}$ (meters per second).
+ - $m$: Mass of the object attempting to escape. Unit: $\text{kg}$ (kilograms).
+ - $r$: Distance from the center of the celestial body to the object. Unit: $\text{m}$ (meters).
+ - $M$: Mass of the celestial body. Unit: $\text{kg}$ (kilograms).
+ - $G$: Gravitational constant, approximately $6.674 \times 10^{-11}$. Unit: $\text{m}^3 \text{kg}^{-1} \text{s}^{-2}$ (cubic meters per kilogram per second squared).
+ - $U$: Gravitational potential energy. Unit: $\text{J}$ (joules, or $\text{kg} \cdot \text{m}^2 \text{s}^{-2}$).
+ - $K$: Kinetic energy of the object. Unit: $\text{J}$ (joules, or $\text{kg} \cdot \text{m}^2 \text{s}^{-2}$).
+
 This assumes a non-rotating body and no atmospheric drag, which affects practical applications. The escape velocity formula $v_e = \sqrt{\frac{2 G M}{r}}$ shows that $v_e$ decreases with distance $r$. The following graph illustrates this relationship for Earth, Moon, Mars, and Jupiter, with vertical lines marking their surface radii:
 
 ![alt text](image-3.png)
@@ -35,6 +45,14 @@ $$ \frac{m v_1^2}{r} = \frac{G M m}{r^2}. $$
 Simplifying:
 
 $$ v_1 = \sqrt{\frac{G M}{r}}. $$
+
+Symbol Definitions and Units:
+
+ - $v_1$: First cosmic velocity, the speed for a circular orbit. Unit: $\text{m/s}$ (meters per second).
+ - $m$: Mass of the orbiting object. Unit: $\text{kg}$ (kilograms).
+ - $r$: Radius of the circular orbit (approximately the body’s radius). Unit: $\text{m}$ (meters).
+ - $M$: Mass of the celestial body. Unit: $\text{kg}$ (kilograms).
+ - $G$: Gravitational constant, approximately $6.674 \times 10^{-11}$. Unit: $\text{m}^3 \text{kg}^{-1} \text{s}^{-2}$ (cubic meters per kilogram per second squared).
 
 Since $v_e = \sqrt{\frac{2 G M}{r}}$, we have $v_1 = v_e / \sqrt{2}$, meaning $v_1$ is about 70.7% of the escape velocity. The relationship $v_1 = v_2 / \sqrt{2}$ holds for all celestial bodies, as shown in the following plot, which confirms the constant ratio across a range of masses, with points for Earth, Moon, Mars, and Jupiter:
 
@@ -55,6 +73,12 @@ The **second cosmic velocity**, $v_2$, is the speed to escape a celestial body�
 $$ v_2 = \sqrt{\frac{2 G M}{r}}. $$
 
 This follows directly from the escape velocity derivation, where the object achieves zero total energy at infinity.
+
+Symbol Definitions and Units
+ - $v_2$: Second cosmic velocity, equivalent to the escape velocity. Unit: $\text{m/s}$ (meters per second).
+ - $G$: Gravitational constant, approximately $6.674 \times 10^{-11}$. Unit: $\text{m}^3 \text{kg}^{-1} \text{s}^{-2}$ (cubic meters per kilogram per second squared).
+ - $M$: Mass of the celestial body. Unit: $\text{kg}$ (kilograms).
+ - $r$: Distance from the center of the celestial body (typically surface radius). Unit: $\text{m}$ (meters).
 
 ### Value for Earth
 For Earth:
@@ -83,6 +107,17 @@ However, launching from Earth’s surface requires first escaping Earth’s grav
 $$ v_3 \approx \sqrt{v_2^2 + \Delta v^2} \approx \sqrt{(11.19)^2 + (12.3)^2} \approx 16.6 \, \text{km/s}. $$
 
 This assumes a direct escape trajectory; gravitational assists or optimized orbits can reduce this requirement.
+
+Symbol Definitions and Units:
+
+ - $v_3$: Third cosmic velocity, the speed to escape the Sun’s gravity from Earth’s orbit. Unit: $\text{m/s}$ (meters per second).
+ - $v_{\text{esc,Sun}}$: Escape velocity from the Sun at Earth’s orbital radius. Unit: $\text{m/s}$ (meters per second).
+ - $G$: Gravitational constant, approximately $6.674 \times 10^{-11}$. Unit: $\text{m}^3 \text{kg}^{-1} \text{s}^{-2}$ (cubic meters per kilogram per second squared).
+ - $M_{\text{Sun}}$: Mass of the Sun. Unit: $\text{kg}$ (kilograms).
+ - $r$: Orbital radius from the Sun (Earth’s orbit, 1 AU). Unit: $\text{m}$ (meters).
+ - $v_{\text{orb}}$: Earth’s orbital velocity around the Sun. Unit: $\text{m/s}$ (meters per second).
+ - $\Delta v$: Velocity increment to escape the Sun from Earth’s orbit. Unit: $\text{m/s}$ (meters per second).
+ - $v_2$: Second cosmic velocity for Earth. Unit: $\text{m/s}$ (meters per second).
 
 The third cosmic velocity depends on the orbital radius from the Sun, as shown in the following plot, which highlights $v_3$ for Earth (1 AU) and Mars (1.524 AU):
 
