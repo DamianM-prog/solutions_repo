@@ -34,7 +34,9 @@ $$ y_{\text{total}}(x,t) = y_1(x,t) + y_2(x,t) $$
 Example 1: Constructive Interference
 Two transverse waves on a string, with $\lambda = 1$ m, $A_1 = A_2 = 0.1$ m, and no phase difference:
 
-$$y_1(x,t) = 0.1 \sin(2\pi x - \omega t)$$ $$y_2(x,t) = 0.1 \sin(2\pi x - \omega t)$$
+$$y_1(x,t) = 0.1 \sin(2\pi x - \omega t)$$ 
+
+$$y_2(x,t) = 0.1 \sin(2\pi x - \omega t)$$
 
 Resultant:
 $$ y_{\text{total}}(x,t) = 0.2 \sin(2\pi x - \omega t) $$
