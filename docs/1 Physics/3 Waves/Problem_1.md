@@ -24,13 +24,18 @@ Frequency ($f$): Oscillations per second, in hertz (Hz), where $f = \frac{1}{T}$
 Wavelength ($\lambda$): Distance between consecutive in-phase points (e.g., crests), in meters.
 
 For example, a sound wave in air ($v = 343$ m/s) with $f = 440$ Hz (A4 note) has wavelength:
+
 $$\lambda = \frac{v}{f} = \frac{343}{440} \approx 0.78 , \text{m}$$
 Superposition of Waves
 Superposition occurs when multiple waves overlap, with their displacements adding algebraically:
+
 $$ y_{\text{total}}(x,t) = y_1(x,t) + y_2(x,t) $$
+
 Example 1: Constructive Interference
 Two transverse waves on a string, with $\lambda = 1$ m, $A_1 = A_2 = 0.1$ m, and no phase difference:
-$$y_1(x,t) = 0.1 \sin(2\pi x - \omega t) $$$$ y_2(x,t) = 0.1 \sin(2\pi x - \omega t)$$
+
+$$y_1(x,t) = 0.1 \sin(2\pi x - \omega t)$$ $$y_2(x,t) = 0.1 \sin(2\pi x - \omega t)$$
+
 Resultant:
 $$ y_{\text{total}}(x,t) = 0.2 \sin(2\pi x - \omega t) $$
 The amplitude doubles to 0.2 m due to constructive interference.
@@ -93,6 +98,20 @@ $v_o$: Observer velocity, in meters per second (m/s).
 $v_s$: Source velocity, in meters per second (m/s).
 $f'$: Observed frequency in Doppler Effect, in hertz (Hz).
 
-Conclusion
-Transverse and longitudinal waves differ in oscillation direction and medium requirements, governed by $v = f \lambda$. Superposition enables constructive interference, destructive interference, and beats, allowing two speakers to produce silence at specific points. The Doppler Effect quantifies frequency shifts due to relative motion, with various configurations illustrating its applications in acoustics and beyond.
+## Vizualization of Wave Interferece 
 
+### Wave with 1 source
+
+![alt text](Fizyk.gif)
+
+### Wave with 2 sources
+
+![alt text](Fizyk2.gif)
+
+### Wave with 3 sources
+
+![alt text](Fizyk3.gif)
+
+### Pentagonal Wave shape (5 sources)
+
+![alt text](Fizyk4.gif)
