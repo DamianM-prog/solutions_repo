@@ -36,6 +36,7 @@ Two transverse waves on a string, with $\lambda = 1$ m, $A_1 = A_2 = 0.1$ m, and
 
 $$y_1(x,t) = 0.1 \sin(2\pi x - \omega t)$$ 
 
+
 $$y_2(x,t) = 0.1 \sin(2\pi x - \omega t)$$
 
 Resultant:
