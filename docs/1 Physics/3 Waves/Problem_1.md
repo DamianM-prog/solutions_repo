@@ -107,6 +107,10 @@ $f'$: Observed frequency in Doppler Effect, in hertz (Hz).
 
 ![alt text](Fizyk.gif)
 
+### Wave with 1 source but as a 3d image
+
+![alt text](image.png)
+
 ### Wave with 2 sources
 
 ![alt text](Fizyk2.gif)
