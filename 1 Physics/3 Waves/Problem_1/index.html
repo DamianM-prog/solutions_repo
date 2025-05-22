@@ -172,6 +172,80 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<p>Wave Mechanics and the Doppler Effect
+Transverse and Longitudinal Waves
+Waves are disturbances that propagate energy through a medium or space. They are classified into two primary types based on the direction of particle oscillation relative to wave propagation:</p>
+<p>Transverse Waves: Particles oscillate perpendicular to the direction of wave propagation. For a wave traveling along the <span class="arithmatex">\(x\)</span>-axis, particle displacement occurs in the <span class="arithmatex">\(y\)</span>-direction, described by <span class="arithmatex">\(y(x,t) = A \sin(kx - \omega t)\)</span>, where <span class="arithmatex">\(A\)</span> is amplitude, <span class="arithmatex">\(k = \frac{2\pi}{\lambda}\)</span> is the wave number, <span class="arithmatex">\(\lambda\)</span> is wavelength, and <span class="arithmatex">\(\omega = 2\pi f\)</span> is angular frequency, with <span class="arithmatex">\(f\)</span> as frequency. Examples include electromagnetic waves and waves on a string.</p>
+<p>Longitudinal Waves: Particles oscillate parallel to the direction of wave propagation. In sound waves traveling along the <span class="arithmatex">\(x\)</span>-axis, particles create compressions and rarefactions, with pressure variations expressed as <span class="arithmatex">\(p(x,t) = p_0 \sin(kx - \omega t)\)</span>. Examples include sound waves and seismic P-waves.</p>
+<p>Key Differences:</p>
+<p>Oscillation Direction: Transverse waves oscillate perpendicular to propagation; longitudinal waves oscillate parallel.
+Polarization: Transverse waves can be polarized; longitudinal waves cannot.
+Medium: Transverse waves require shear strength (e.g., solids), while longitudinal waves propagate in solids, liquids, and gases.</p>
+<p>Wave Velocity, Frequency, and Wavelength
+The velocity <span class="arithmatex">\(v\)</span> of a wave relates its frequency <span class="arithmatex">\(f\)</span> and wavelength <span class="arithmatex">\(\lambda\)</span> via:
+<span class="arithmatex">\(<span class="arithmatex">\(v = f \lambda\)</span>\)</span></p>
+<p>Wave Velocity (<span class="arithmatex">\(v\)</span>): Speed of wave propagation, dependent on the medium (e.g., tension for strings, density for sound).
+Frequency (<span class="arithmatex">\(f\)</span>): Oscillations per second, in hertz (Hz), where <span class="arithmatex">\(f = \frac{1}{T}\)</span>, with <span class="arithmatex">\(T\)</span> as the period.
+Wavelength (<span class="arithmatex">\(\lambda\)</span>): Distance between consecutive in-phase points (e.g., crests), in meters.</p>
+<p>For example, a sound wave in air (<span class="arithmatex">\(v = 343\)</span> m/s) with <span class="arithmatex">\(f = 440\)</span> Hz (A4 note) has wavelength:
+<span class="arithmatex">\(<span class="arithmatex">\(\lambda = \frac{v}{f} = \frac{343}{440} \approx 0.78 , \text{m}\)</span>\)</span>
+Superposition of Waves
+Superposition occurs when multiple waves overlap, with their displacements adding algebraically:
+$$ y_{\text{total}}(x,t) = y_1(x,t) + y_2(x,t) $$
+Example 1: Constructive Interference
+Two transverse waves on a string, with <span class="arithmatex">\(\lambda = 1\)</span> m, <span class="arithmatex">\(A_1 = A_2 = 0.1\)</span> m, and no phase difference:
+$$y_1(x,t) = 0.1 \sin(2\pi x - \omega t) $$$$ y_2(x,t) = 0.1 \sin(2\pi x - \omega t)$$
+Resultant:
+$$ y_{\text{total}}(x,t) = 0.2 \sin(2\pi x - \omega t) $$
+The amplitude doubles to 0.2 m due to constructive interference.
+Example 2: Destructive Interference
+Two waves with <span class="arithmatex">\(\lambda = 1\)</span> m, <span class="arithmatex">\(A_1 = 0.1\)</span> m, <span class="arithmatex">\(A_2 = 0.05\)</span> m, and phase difference <span class="arithmatex">\(\pi\)</span>:
+$$ y_1(x,t) = 0.1 \sin(2\pi x - \omega t) $$$$ y_2(x,t) = 0.05 \sin(2\pi x - \omega t + \pi) = -0.05 \sin(2\pi x - \omega t) $$
+Resultant:
+$$ y_{\text{total}}(x,t) = 0.05 \sin(2\pi x - \omega t) $$
+The amplitude reduces to 0.05 m due to partial destructive interference.
+Example 3: Beats
+Two sound waves with <span class="arithmatex">\(f_1 = 440\)</span> Hz, <span class="arithmatex">\(f_2 = 442\)</span> Hz, and <span class="arithmatex">\(A = 0.1\)</span> Pa:
+$$ p_1(x,t) = 0.1 \sin(2\pi \cdot 440 t) $$$$ p_2(x,t) = 0.1 \sin(2\pi \cdot 442 t) $$
+Resultant:
+$$ p_{\text{total}}(t) = 0.2 \cos(2\pi \cdot 1 t) \sin(2\pi \cdot 441 t) $$
+This produces beats with a beat frequency of <span class="arithmatex">\(f_2 - f_1 = 2\)</span> Hz.
+Can Two Speakers Produce Silence?
+Yes, two speakers can produce silence at specific points via destructive interference. For sound waves with equal frequency, amplitude, and wavelength but a phase difference of <span class="arithmatex">\(\pi\)</span>:
+$$ p_1(x,t) = p_0 \sin(kx - \omega t) $$$$ p_2(x,t) = p_0 \sin(kx - \omega t + \pi) = -p_0 \sin(kx - \omega t) $$
+$$ p_{\text{total}}(x,t) = 0 $$
+Silence occurs at nodes where waves cancel, though this is position-dependent.
+The Doppler Effect
+The Doppler Effect describes the change in observed frequency <span class="arithmatex">\(f'\)</span> due to relative motion between source and observer:
+$$ f' = f \left( \frac{v \pm v_o}{v \mp v_s} \right) $$
+where <span class="arithmatex">\(v\)</span> is wave speed, <span class="arithmatex">\(v_o\)</span> is observer velocity (positive toward source), and <span class="arithmatex">\(v_s\)</span> is source velocity (positive away from observer). The numerator uses <span class="arithmatex">\(+\)</span> if the observer moves toward the source, <span class="arithmatex">\(-\)</span> if away; the denominator uses <span class="arithmatex">\(-\)</span> if the source moves toward the observer, <span class="arithmatex">\(+\)</span> if away.
+Configurations</p>
+<p>Stationary Source, Moving Observer:</p>
+<p>Toward source (<span class="arithmatex">\(v_o &gt; 0\)</span>, <span class="arithmatex">\(v_s = 0\)</span>):$$ f' = f \left( \frac{v + v_o}{v} \right) $$Example: For <span class="arithmatex">\(f = 440\)</span> Hz, <span class="arithmatex">\(v = 343\)</span> m/s, <span class="arithmatex">\(v_o = 10\)</span> m/s, <span class="arithmatex">\(f' = 440 \left( \frac{343 + 10}{343} \right) \approx 452.2\)</span> Hz.
+Away: Use <span class="arithmatex">\(-v_o\)</span>, reducing <span class="arithmatex">\(f'\)</span>.</p>
+<p>Moving Source, Stationary Observer:</p>
+<p>Source toward observer (<span class="arithmatex">\(v_s &gt; 0\)</span>, <span class="arithmatex">\(v_o = 0\)</span>):$$ f' = f \left( \frac{v}{v - v_s} \right) $$Example: <span class="arithmatex">\(v_s = 10\)</span> m/s, <span class="arithmatex">\(f' = 440 \left( \frac{343}{343 - 10} \right) \approx 453.5\)</span> Hz.
+Away: Use <span class="arithmatex">\(+v_s\)</span>, reducing <span class="arithmatex">\(f'\)</span>.</p>
+<p>Both Moving:</p>
+<p>Both toward each other (<span class="arithmatex">\(v_o &gt; 0\)</span>, <span class="arithmatex">\(v_s &gt; 0\)</span>):$$ f' = f \left( \frac{v + v_o}{v - v_s} \right) $$Example: <span class="arithmatex">\(v_o = 10\)</span> m/s, <span class="arithmatex">\(v_s = 10\)</span> m/s, <span class="arithmatex">\(f' = 440 \left( \frac{343 + 10}{343 - 10} \right) \approx 465.9\)</span> Hz.</p>
+<p>Mathematical Symbols and Units
+Below is a summary of the mathematical symbols and their corresponding units used in this note:</p>
+<p><span class="arithmatex">\(x\)</span>: Spatial coordinate, typically along the wave propagation direction, in meters (m).
+<span class="arithmatex">\(t\)</span>: Time, in seconds (s).
+<span class="arithmatex">\(y(x,t)\)</span>: Displacement in transverse waves, in meters (m).
+<span class="arithmatex">\(p(x,t)\)</span>: Pressure variation in longitudinal waves, in pascals (Pa).
+<span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(p_0\)</span>: Amplitude of displacement or pressure, in meters (m) or pascals (Pa).
+<span class="arithmatex">\(k\)</span>: Wave number, <span class="arithmatex">\(k = \frac{2\pi}{\lambda}\)</span>, in radians per meter (rad/m).
+<span class="arithmatex">\(\lambda\)</span>: Wavelength, in meters (m).
+<span class="arithmatex">\(\omega\)</span>: Angular frequency, <span class="arithmatex">\(\omega = 2\pi f\)</span>, in radians per second (rad/s).
+<span class="arithmatex">\(f\)</span>: Frequency, in hertz (Hz).
+<span class="arithmatex">\(T\)</span>: Period, <span class="arithmatex">\(T = \frac{1}{f}\)</span>, in seconds (s).
+<span class="arithmatex">\(v\)</span>: Wave velocity, in meters per second (m/s).
+<span class="arithmatex">\(v_o\)</span>: Observer velocity, in meters per second (m/s).
+<span class="arithmatex">\(v_s\)</span>: Source velocity, in meters per second (m/s).
+<span class="arithmatex">\(f'\)</span>: Observed frequency in Doppler Effect, in hertz (Hz).</p>
+<p>Conclusion
+Transverse and longitudinal waves differ in oscillation direction and medium requirements, governed by <span class="arithmatex">\(v = f \lambda\)</span>. Superposition enables constructive interference, destructive interference, and beats, allowing two speakers to produce silence at specific points. The Doppler Effect quantifies frequency shifts due to relative motion, with various configurations illustrating its applications in acoustics and beyond.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
