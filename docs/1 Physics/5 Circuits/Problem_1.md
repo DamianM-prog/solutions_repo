@@ -169,8 +169,6 @@ Inductive: $Z_L = j \omega L$
 Series: $Z_{\text{eq}} = Z_1 + Z_2$
 Parallel: $1/Z_{\text{eq}} = 1/Z_1 + 1/Z_2$
 
-![alt text](resistor_combination.gif)
-
 ## 10. Resonance in RLC Circuits
 Resonance occurs when $X_L = X_C$:
 <math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mn>0</mn></msub><mo>=</mo><mfrac><mn>1</mn><msqrt><mrow><mi>L</mi><mi>C</mi></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">  \omega_0 = \frac{1}{\sqrt{LC}}  </annotation></semantics></math>
