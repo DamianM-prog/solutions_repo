@@ -72,6 +72,68 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#1-electric-field-and-the-principle-of-superposition">1. Electric Field and the Principle of Superposition</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#principle-of-superposition">Principle of Superposition</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units">Symbols and Units</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#2-electric-potential-and-electric-field-relationship">2. Electric Potential and Electric Field Relationship</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#derivation">Derivation</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#physical-implications">Physical Implications</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units_1">Symbols and Units</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#3-lorentz-force">3. Lorentz Force</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#applications">Applications</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#trajectory-visualizations">Trajectory Visualizations</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units_2">Symbols and Units</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#4-electric-currents-and-magnetic-fields">4. Electric Currents and Magnetic Fields</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#magnetic-field-of-a-current-carrying-wire">Magnetic Field of a Current-Carrying Wire</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#forces-between-current-carrying-wires">Forces Between Current-Carrying Wires</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#right-hand-rule">Right-Hand Rule</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#lenzs-law">Lenz’s Law</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units_3">Symbols and Units</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#5-electromagnetic-induction">5. Electromagnetic Induction</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#derivation_1">Derivation</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization-of-induced-emf">Visualization of Induced EMF</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#applications_1">Applications</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units_4">Symbols and Units:</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#6-maxwells-equations">6. Maxwell’s Equations</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#significance">Significance</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#symbols-and-units_5">Symbols and Units:</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,6 +234,127 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h2 id="1-electric-field-and-the-principle-of-superposition">1. Electric Field and the Principle of Superposition</h2>
+<p>The electric field <span class="arithmatex">\(\mathbf{E}\)</span> at a point in space is defined as the force <span class="arithmatex">\(\mathbf{F}\)</span> per unit charge <span class="arithmatex">\(q\)</span> experienced by a positive test charge placed at that point: $$ \mathbf{E} = \frac{\mathbf{F}}{q} $$ The electric field due to a point charge <span class="arithmatex">\(Q\)</span> at a distance <span class="arithmatex">\(r\)</span> is given by Coulomb’s law: $$ \mathbf{E} = \frac{k Q}{r^2} \hat{\mathbf{r}} $$ where <span class="arithmatex">\(k\)</span> is Coulomb’s constant (<span class="arithmatex">\(k \approx 8.99 \times 10^9 , \text{N·m}^2/\text{C}^2\)</span>), and <span class="arithmatex">\(\hat{\mathbf{r}}\)</span> is the unit vector pointing from the charge to the observation point.</p>
+<h3 id="principle-of-superposition">Principle of Superposition</h3>
+<p>The principle of superposition states that the total electric field at a point due to multiple charges is the vector sum of the individual electric fields produced by each charge. Mathematically, for <span class="arithmatex">\(n\)</span> point charges <span class="arithmatex">\(q_i\)</span> at positions <span class="arithmatex">\(\mathbf{r}i\)</span>, the total electric field at point <span class="arithmatex">\(\mathbf{r}\)</span> is: $$ \mathbf{E}{\text{total}}(\mathbf{r}) = \sum_{i=1}^n \mathbf{E}i(\mathbf{r}) = \sum{i=1}^n \frac{k q_i}{|\mathbf{r} - \mathbf{r}i|^2} \hat{\mathbf{r}}{i} $$ where <span class="arithmatex">\(\hat{\mathbf{r}}_{i}\)</span> is the unit vector from the <span class="arithmatex">\(i\)</span>-th charge to the point <span class="arithmatex">\(\mathbf{r}\)</span>.</p>
+<p>Example: Two Point Charges</p>
+<p>Consider two point charges: <span class="arithmatex">\(q_1 = +2 , \mu\text{C}\)</span> at <span class="arithmatex">\((0, 0)\)</span> and <span class="arithmatex">\(q_2 = -3 , \mu\text{C}\)</span> at <span class="arithmatex">\((d, 0)\)</span>, with <span class="arithmatex">\(d = 1 , \text{m}\)</span>. Calculate the electric field at point <span class="arithmatex">\(P = (0.5, 0)\)</span>.</p>
+<p>Electric field due to <span class="arithmatex">\(q_1\)</span> at <span class="arithmatex">\(P\)</span>: Distance <span class="arithmatex">\(r_1 = 0.5 , \text{m}\)</span>, so: $$ E_1 = \frac{k q_1}{r_1^2} = \frac{(8.99 \times 10^9)(2 \times 10^{-6})}{(0.5)^2} = 7.192 \times 10^4 , \text{N/C} $$ Directed along the positive <span class="arithmatex">\(x\)</span>-axis: <span class="arithmatex">\(\mathbf{E}_1 = (7.192 \times 10^4, 0)\)</span>.</p>
+<p>Electric field due to <span class="arithmatex">\(q_2\)</span> at <span class="arithmatex">\(P\)</span>: Distance <span class="arithmatex">\(r_2 = 0.5 , \text{m}\)</span>, so: $$ E_2 = \frac{k |q_2|}{r_2^2} = \frac{(8.99 \times 10^9)(3 \times 10^{-6})}{(0.5)^2} = 1.079 \times 10^5 , \text{N/C} $$ Since <span class="arithmatex">\(q_2\)</span> is negative, the field points toward <span class="arithmatex">\(q_2\)</span> (negative <span class="arithmatex">\(x\)</span>-direction): <span class="arithmatex">\(\mathbf{E}_2 = (-1.079 \times 10^5, 0)\)</span>.</p>
+<p>Total electric field: $$ \mathbf{E}_{\text{total}} = \mathbf{E}_1 + \mathbf{E}_2 = (7.192 \times 10^4 - 1.079 \times 10^5, 0) = (-3.598 \times 10^4, 0) , \text{N/C} $$ The net field points in the negative <span class="arithmatex">\(x\)</span>-direction with magnitude <span class="arithmatex">\(3.598 \times 10^4 , \text{N/C}\)</span>.</p>
+<h3 id="symbols-and-units">Symbols and Units</h3>
+<p><span class="arithmatex">\(\mathbf{E}\)</span>: Electric field, units: <span class="arithmatex">\(\text{N/C}\)</span> (newtons per coulomb)</p>
+<p><span class="arithmatex">\(\mathbf{F}\)</span>: Force, units: <span class="arithmatex">\(\text{N}\)</span> (newtons)</p>
+<p><span class="arithmatex">\(q\)</span>, <span class="arithmatex">\(q_i\)</span>, <span class="arithmatex">\(Q\)</span>: Electric charge, units: <span class="arithmatex">\(\text{C}\)</span> (coulombs)</p>
+<p><span class="arithmatex">\(k\)</span>: Coulomb’s constant, units: <span class="arithmatex">\(\text{N·m}^2/\text{C}^2\)</span></p>
+<p><span class="arithmatex">\(r\)</span>, <span class="arithmatex">\(r_1\)</span>, <span class="arithmatex">\(r_2\)</span>, <span class="arithmatex">\(|\mathbf{r} - \mathbf{r}_i|\)</span>: Distance, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<p><span class="arithmatex">\(\hat{\mathbf{r}}\)</span>, <span class="arithmatex">\(\hat{\mathbf{r}}_{i}\)</span>: Unit vector, dimensionless</p>
+<p><span class="arithmatex">\(\mathbf{r}\)</span>, <span class="arithmatex">\(\mathbf{r}_i\)</span>: Position vector, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<h2 id="2-electric-potential-and-electric-field-relationship">2. Electric Potential and Electric Field Relationship</h2>
+<p>The electric potential <span class="arithmatex">\(V\)</span> at a point is the work done per unit charge to bring a positive test charge from infinity to that point: $$ V = -\int_{\infty}^{\mathbf{r}} \mathbf{E} \cdot d\mathbf{l} $$ For a point charge <span class="arithmatex">\(q\)</span> at distance <span class="arithmatex">\(r\)</span>, the potential is: $$ V = \frac{k q}{r} $$</p>
+<p>Electric Field as the Gradient of Potential</p>
+<p>The electric field is the negative gradient of the electric potential: $$ \mathbf{E} = -\nabla V $$ In Cartesian coordinates, this is: $$ \mathbf{E} = -\left( \frac{\partial V}{\partial x} \hat{\mathbf{i}} + \frac{\partial V}{\partial y} \hat{\mathbf{j}} + \frac{\partial V}{\partial z} \hat{\mathbf{k}} \right) $$</p>
+<h3 id="derivation">Derivation</h3>
+<p>Consider the potential due to a point charge <span class="arithmatex">\(q\)</span> at the origin, <span class="arithmatex">\(V = \frac{k q}{r}\)</span>, where <span class="arithmatex">\(r = \sqrt{x^2 + y^2 + z^2}\)</span>. The gradient is: $$ \nabla V = \frac{\partial V}{\partial x} \hat{\mathbf{i}} + \frac{\partial V}{\partial y} \hat{\mathbf{j}} + \frac{\partial V}{\partial z} \hat{\mathbf{k}} $$ Compute the partial derivative: $$ \frac{\partial V}{\partial x} = \frac{\partial}{\partial x} \left( \frac{k q}{(x^2 + y^2 + z^2)^{1/2}} \right) = -\frac{k q x}{(x^2 + y^2 + z^2)^{3/2}} $$ Similarly for <span class="arithmatex">\(y\)</span> and <span class="arithmatex">\(z\)</span>. Thus: $$ \nabla V = -\frac{k q \mathbf{r}}{r^3} $$ So: $$ \mathbf{E} = -\nabla V = \frac{k q \mathbf{r}}{r^3} = \frac{k q}{r^2} \hat{\mathbf{r}} $$ This matches the expression for the electric field of a point charge.</p>
+<h3 id="physical-implications">Physical Implications</h3>
+<p>The negative sign indicates that the electric field points in the direction of decreasing potential, reflecting the force on a positive charge.</p>
+<p>Equipotential surfaces are perpendicular to electric field lines.</p>
+<p>This relationship simplifies calculations in systems with high symmetry, as scalar potentials are often easier to compute than vector fields.</p>
+<h3 id="symbols-and-units_1">Symbols and Units</h3>
+<p><span class="arithmatex">\(V\)</span>: Electric potential, units: <span class="arithmatex">\(\text{V}\)</span> (volts)</p>
+<p><span class="arithmatex">\(\mathbf{E}\)</span>: Electric field, units: <span class="arithmatex">\(\text{N/C}\)</span> or <span class="arithmatex">\(\text{V/m}\)</span> (volts per meter)</p>
+<p><span class="arithmatex">\(d\mathbf{l}\)</span>: Differential displacement, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<p><span class="arithmatex">\(q\)</span>: Electric charge, units: <span class="arithmatex">\(\text{C}\)</span> (coulombs)</p>
+<p><span class="arithmatex">\(k\)</span>: Coulomb’s constant, units: <span class="arithmatex">\(\text{N·m}^2/\text{C}^2\)</span></p>
+<p><span class="arithmatex">\(r\)</span>: Distance, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<p><span class="arithmatex">\(\mathbf{r}\)</span>: Position vector, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<p><span class="arithmatex">\(x\)</span>, <span class="arithmatex">\(y\)</span>, <span class="arithmatex">\(z\)</span>: Cartesian coordinates, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<p><span class="arithmatex">\(\hat{\mathbf{i}}\)</span>, <span class="arithmatex">\(\hat{\mathbf{j}}\)</span>, <span class="arithmatex">\(\hat{\mathbf{k}}\)</span>: Unit vectors, dimensionless</p>
+<h2 id="3-lorentz-force">3. Lorentz Force</h2>
+<p>The Lorentz force acts on a charged particle with charge <span class="arithmatex">\(q\)</span> moving with velocity <span class="arithmatex">\(\mathbf{v}\)</span> in electric and magnetic fields <span class="arithmatex">\(\mathbf{E}\)</span> and <span class="arithmatex">\(\mathbf{B}\)</span>: $$ \mathbf{F} = q \mathbf{E} + q \mathbf{v} \times \mathbf{B} $$</p>
+<p>The electric force <span class="arithmatex">\(q \mathbf{E}\)</span> is independent of the particle’s velocity.</p>
+<p>The magnetic force <span class="arithmatex">\(q \mathbf{v} \times \mathbf{B}\)</span> is perpendicular to both <span class="arithmatex">\(\mathbf{v}\)</span> and <span class="arithmatex">\(\mathbf{B}\)</span> and vanishes if <span class="arithmatex">\(\mathbf{v} = 0\)</span> or <span class="arithmatex">\(\mathbf{v} \parallel \mathbf{B}\)</span>.</p>
+<h3 id="applications">Applications</h3>
+<p>Cyclotrons: A charged particle moves in a circular path in a uniform magnetic field due to the magnetic component of the Lorentz force. The radius of the path is: $$ r = \frac{m v}{|q| B} $$ Cyclotrons use this to accelerate particles for research.</p>
+<p>Mass Spectrometers: The Lorentz force separates ions by mass-to-charge ratio. Ions follow curved paths in a magnetic field, with the radius depending on <span class="arithmatex">\(m/q\)</span>, allowing identification of particles.</p>
+<h3 id="trajectory-visualizations">Trajectory Visualizations</h3>
+<p>Below are Python plots depicting three trajectories of a charged particle with charge <span class="arithmatex">\(q = 1 , \text{C}\)</span> and mass <span class="arithmatex">\(m = 0.001 , \text{kg}\)</span> in a uniform magnetic field <span class="arithmatex">\(\mathbf{B} = (0, 0, 1) , \text{T}\)</span>, with no electric field (<span class="arithmatex">\(\mathbf{E} = 0\)</span>). The equations of motion are derived from: $$ m \frac{d\mathbf{v}}{dt} = q \mathbf{v} \times \mathbf{B} $$ The cyclotron frequency is: $$ \omega = \frac{|q| B}{m} = \frac{1 \cdot 1}{0.001} = 1000 , \text{rad/s} $$ The radius is: $$ r = \frac{m v}{|q| B} = \frac{0.001 v}{1 \cdot 1} = 0.001 v $$ To achieve a radius <span class="arithmatex">\(r \approx 1 , \text{m}\)</span>, we set the initial velocity magnitude appropriately (e.g., <span class="arithmatex">\(v = 1000 , \text{m/s}\)</span>).</p>
+<h4 id="spiral-trajectory">Spiral Trajectory</h4>
+<p>For initial velocity <span class="arithmatex">\(\mathbf{v}_0 = (1000, 0, 0)\)</span>, the radius is <span class="arithmatex">\(r = 0.001 \cdot 1000 = 1 , \text{m}\)</span>, and the trajectory is a circle in the <span class="arithmatex">\(x\)</span>-<span class="arithmatex">\(y\)</span> plane: $$ x(t) = r \cos(\omega t), \quad y(t) = r \sin(\omega t), \quad z(t) = 0 $$</p>
+<p><img alt="alt text" src="../image-1.png"/></p>
+<h4 id="interesting-trajectory-damped-helix">Interesting Trajectory (Damped Helix)</h4>
+<p>With a damping force (e.g., resistive medium), the trajectory is:</p>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>r</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>γ</mi><mi>t</mi></mrow></msup><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="1em"></mspace><mi>y</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>r</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>γ</mi><mi>t</mi></mrow></msup><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="1em"></mspace><mi>z</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>v</mi><mi>z</mi></msub><mi>t</mi></mrow><annotation encoding="application/x-tex">x(t) = r e^{-\gamma t} \cos(\omega t), \quad y(t) = r e^{-\gamma t} \sin(\omega t), \quad z(t) = v_z t</annotation></semantics></math>
+<p>where <span class="arithmatex">\(\gamma = 100 , \text{s}^{-1}\)</span> (scaled for visibility with high <span class="arithmatex">\(\omega\)</span>), <span class="arithmatex">\(r = 1 , \text{m}\)</span>, <span class="arithmatex">\(v_z = 0.5 , \text{m/s}\)</span>. The plot shows the <span class="arithmatex">\(x\)</span>-<span class="arithmatex">\(y\)</span> projection.</p>
+<p><img alt="alt text" src="../image-2.png"/></p>
+<h3 id="symbols-and-units_2">Symbols and Units</h3>
+<p><span class="arithmatex">\(\mathbf{F}\)</span>: Lorentz force, units: <span class="arithmatex">\(\text{N}\)</span> (newtons)</p>
+<p><span class="arithmatex">\(q\)</span>: Electric charge, units: <span class="arithmatex">\(\text{C}\)</span> (coulombs)</p>
+<p><span class="arithmatex">\(\mathbf{E}\)</span>: Electric field, units: <span class="arithmatex">\(\text{N/C}\)</span></p>
+<p><span class="arithmatex">\(\mathbf{v}\)</span>: Velocity, units: <span class="arithmatex">\(\text{m/s}\)</span> (meters per second)</p>
+<p><span class="arithmatex">\(\mathbf{B}\)</span>: Magnetic field, units: <span class="arithmatex">\(\text{T}\)</span> (tesla)</p>
+<p><span class="arithmatex">\(m\)</span>: Mass, units: <span class="arithmatex">\(\text{kg}\)</span> (kilograms)</p>
+<p><span class="arithmatex">\(r\)</span>: Radius of circular path, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<h2 id="4-electric-currents-and-magnetic-fields">4. Electric Currents and Magnetic Fields</h2>
+<h3 id="magnetic-field-of-a-current-carrying-wire">Magnetic Field of a Current-Carrying Wire</h3>
+<p>The magnetic field produced by an infinite straight wire carrying current <span class="arithmatex">\(I\)</span> at a distance <span class="arithmatex">\(r\)</span> is derived using the Biot-Savart Law: $$ d\mathbf{B} = \frac{\mu_0}{4\pi} \frac{I d\mathbf{l} \times \hat{\mathbf{r}}}{r^2} $$ where <span class="arithmatex">\(\mu_0 = 4\pi \times 10^{-7} , \text{T·m/A}\)</span> is the permeability of free space. For an infinite wire along the <span class="arithmatex">\(z\)</span>-axis, the magnetic field at distance <span class="arithmatex">\(r\)</span> is: $$ B = \frac{\mu_0 I}{2\pi r} $$ directed azimuthally (via the right-hand rule).</p>
+<h3 id="forces-between-current-carrying-wires">Forces Between Current-Carrying Wires</h3>
+<p>For two parallel wires with currents <span class="arithmatex">\(I_1\)</span> and <span class="arithmatex">\(I_2\)</span> separated by distance <span class="arithmatex">\(d\)</span>:</p>
+<p>Same direction: The magnetic field from one wire induces an attractive force on the other. The force per unit length is: $$ \frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d} $$</p>
+<p>Opposite directions: The force is repulsive with the same magnitude.</p>
+<h3 id="right-hand-rule">Right-Hand Rule</h3>
+<p>The right-hand rule determines the direction of the magnetic field or force:</p>
+<p>For a current-carrying wire, point the thumb in the direction of the current; the fingers curl in the direction of the magnetic field.</p>
+<p>For the magnetic force, point fingers in the direction of <span class="arithmatex">\(\mathbf{v}\)</span>, palm toward <span class="arithmatex">\(\mathbf{B}\)</span>, and the thumb points in the direction of <span class="arithmatex">\(\mathbf{v} \times \mathbf{B}\)</span>.</p>
+<h3 id="lenzs-law">Lenz’s Law</h3>
+<p>Lenz’s Law states that the induced current in a loop opposes the change in magnetic flux through it. This ensures conservation of energy, as the induced current creates a magnetic field opposing the external field’s change.</p>
+<h3 id="symbols-and-units_3">Symbols and Units</h3>
+<p><span class="arithmatex">\(\mathbf{B}\)</span>, <span class="arithmatex">\(d\mathbf{B}\)</span>: Magnetic field, units: <span class="arithmatex">\(\text{T}\)</span> (tesla)</p>
+<p><span class="arithmatex">\(\mu_0\)</span>: Permeability of free space, units: <span class="arithmatex">\(\text{T·m/A}\)</span> (tesla meter per ampere)</p>
+<p><span class="arithmatex">\(I\)</span>, <span class="arithmatex">\(I_1\)</span>, <span class="arithmatex">\(I_2\)</span>: Electric current, units: <span class="arithmatex">\(\text{A}\)</span> (amperes)</p>
+<p><span class="arithmatex">\(d\mathbf{l}\)</span>: Differential length element, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<p><span class="arithmatex">\(\hat{\mathbf{r}}\)</span>: Unit vector, dimensionless</p>
+<p><span class="arithmatex">\(r\)</span>, <span class="arithmatex">\(d\)</span>: Distance, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<p><span class="arithmatex">\(F\)</span>: Force, units: <span class="arithmatex">\(\text{N}\)</span> (newtons)</p>
+<p><span class="arithmatex">\(L\)</span>: Length, units: <span class="arithmatex">\(\text{m}\)</span> (meters)</p>
+<h2 id="5-electromagnetic-induction">5. Electromagnetic Induction</h2>
+<p>Faraday’s Law</p>
+<p>Faraday’s Law states that the electromotive force (EMF) induced in a loop is: $$ \mathcal{E} = -\frac{d\Phi_B}{dt} $$ where <span class="arithmatex">\(\Phi_B = \int \mathbf{B} \cdot d\mathbf{A}\)</span> is the magnetic flux. The negative sign reflects Lenz’s Law.</p>
+<h3 id="derivation_1">Derivation</h3>
+<p>Consider a loop in a changing magnetic field <span class="arithmatex">\(\mathbf{B}\)</span>. The flux is: $$ \Phi_B = B A \cos\theta $$ If <span class="arithmatex">\(B\)</span>, <span class="arithmatex">\(A\)</span>, or <span class="arithmatex">\(\theta\)</span> changes, the EMF is: $$ \mathcal{E} = -\frac{d}{dt} (B A \cos\theta) $$</p>
+<h3 id="visualization-of-induced-emf">Visualization of Induced EMF</h3>
+<p>The plot below shows the induced EMF <span class="arithmatex">\(\mathcal{E} = B A \omega \sin(\omega t)\)</span> for a loop rotating in a magnetic field with <span class="arithmatex">\(B = 1 , \text{T}\)</span>, <span class="arithmatex">\(A = 1 , \text{m}^2\)</span>, <span class="arithmatex">\(\omega = 1 , \text{rad/s}\)</span>.</p>
+<p><img alt="alt text" src="../image.png"/></p>
+<h3 id="applications_1">Applications</h3>
+<p>Electric Generators: Rotating coils in a magnetic field induce EMF, converting mechanical energy to electrical energy.</p>
+<p>Transformers: Alternating current in a primary coil induces a changing magnetic flux, which induces EMF in a secondary coil, allowing voltage transformation.</p>
+<h3 id="symbols-and-units_4">Symbols and Units:</h3>
+<p><span class="arithmatex">\(\mathcal{E}\)</span>: Electromotive force (EMF), units: <span class="arithmatex">\(\text{V}\)</span> (volts)</p>
+<p><span class="arithmatex">\(\Phi_B\)</span>: Magnetic flux, units: <span class="arithmatex">\(\text{Wb}\)</span> (webers)</p>
+<p><span class="arithmatex">\(\mathbf{B}\)</span>: Magnetic field, units: <span class="arithmatex">\(\text{T}\)</span> (tesla)</p>
+<p><span class="arithmatex">\(d\mathbf{A}\)</span>: Differential area element, units: <span class="arithmatex">\(\text{m}^2\)</span> (square meters)</p>
+<p><span class="arithmatex">\(A\)</span>: Area, units: <span class="arithmatex">\(\text{m}^2\)</span> (square meters)</p>
+<p><span class="arithmatex">\(\theta\)</span>: Angle between <span class="arithmatex">\(\mathbf{B}\)</span> and the normal to the loop, units: radians</p>
+<p><span class="arithmatex">\(t\)</span>: Time, units: <span class="arithmatex">\(\text{s}\)</span> (seconds)</p>
+<h2 id="6-maxwells-equations">6. Maxwell’s Equations</h2>
+<p>Maxwell’s equations unify electricity and magnetism:</p>
+<p>Gauss’s Law for Electricity: $$ \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} $$ Relates electric field divergence to charge density.</p>
+<p>Gauss’s Law for Magnetism: $$ \nabla \cdot \mathbf{B} = 0 $$ Indicates no magnetic monopoles.</p>
+<p>Faraday’s Law: $$ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} $$ Describes how changing magnetic fields induce electric fields.</p>
+<p>Ampère’s Law with Maxwell’s Correction: $$ \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t} $$ Relates magnetic fields to currents and changing electric fields.</p>
+<h3 id="significance">Significance</h3>
+<p>Maxwell’s equations predict electromagnetic waves, where oscillating <span class="arithmatex">\(\mathbf{E}\)</span> and <span class="arithmatex">\(\mathbf{B}\)</span> fields propagate at the speed of light <span class="arithmatex">\(c = \frac{1}{\sqrt{\mu_0 \epsilon_0}}\)</span>.</p>
+<p>They unify electricity and magnetism into a single electromagnetic theory, forming the foundation of classical electromagnetism.</p>
+<h3 id="symbols-and-units_5">Symbols and Units:</h3>
+<p><span class="arithmatex">\(\mathbf{E}\)</span>: Electric field, units: <span class="arithmatex">\(\text{N/C}\)</span> or <span class="arithmatex">\(\text{V/m}\)</span></p>
+<p><span class="arithmatex">\(\mathbf{B}\)</span>: Magnetic field, units: <span class="arithmatex">\(\text{T}\)</span> (tesla)</p>
+<p><span class="arithmatex">\(\rho\)</span>: Charge density, units: <span class="arithmatex">\(\text{C/m}^3\)</span> (coulombs per cubic meter)</p>
+<p><span class="arithmatex">\(\epsilon_0\)</span>: Permittivity of free space, units: <span class="arithmatex">\(\text{C}^2/\text{N·m}^2\)</span> or <span class="arithmatex">\(\text{F/m}\)</span> (farads per meter)</p>
+<p><span class="arithmatex">\(\mu_0\)</span>: Permeability of free space, units: <span class="arithmatex">\(\text{T·m/A}\)</span></p>
+<p><span class="arithmatex">\(\mathbf{J}\)</span>: Current density, units: <span class="arithmatex">\(\text{A/m}^2\)</span> (amperes per square meter)</p>
+<p><span class="arithmatex">\(t\)</span>: Time, units: <span class="arithmatex">\(\text{s}\)</span> (seconds)</p>
+<p><span class="arithmatex">\(c\)</span>: Speed of light, units: <span class="arithmatex">\(\text{m/s}\)</span> (meters per second)</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
