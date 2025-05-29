@@ -155,12 +155,20 @@ For initial velocity $\mathbf{v}_0 = (1000, 0, 0)$, the radius is $r = 0.001 \cd
 
 ![alt text](image-1.png)
 
+
+
 #### Interesting Trajectory (Damped Helix)
 With a damping force (e.g., resistive medium), the trajectory is:
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>x</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>r</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>γ</mi><mi>t</mi></mrow></msup><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="1em"></mspace><mi>y</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><mi>r</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>γ</mi><mi>t</mi></mrow></msup><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="1em"></mspace><mi>z</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mo>=</mo><msub><mi>v</mi><mi>z</mi></msub><mi>t</mi></mrow><annotation encoding="application/x-tex">x(t) = r e^{-\gamma t} \cos(\omega t), \quad y(t) = r e^{-\gamma t} \sin(\omega t), \quad z(t) = v_z t</annotation></semantics></math>
 where $\gamma = 100 , \text{s}^{-1}$ (scaled for visibility with high $\omega$), $r = 1 , \text{m}$, $v_z = 0.5 , \text{m/s}$. The plot shows the $x$-$y$ projection.
 
 ![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
 
 ### Symbols and Units
 
