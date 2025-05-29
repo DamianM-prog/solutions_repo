@@ -44,7 +44,7 @@ Capacitors: Series ($1/C_{\text{eq}} = 1/C_1 + 1/C_2$), Parallel ($C_1 + C_2$).
 
 ### Simulation of Equivalent Resistance(Parallel)
 
-![alt text](parallel_resistor_combination.gif)
+![alt text](<parallel_resistor_combination (1).gif>)
 
 
 Iterate: Replace each combination with its equivalent until a single value remains.
