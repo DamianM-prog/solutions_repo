@@ -86,6 +86,26 @@
 </li>
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 2</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#estimating-pi-using-monte-carlo-methods">Estimating Pi using Monte Carlo Methods</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#theoretical-foundation">Theoretical Foundation</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#simulation">Simulation</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#analysis">Analysis</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#buffons-needle-problem">Buffon's Needle Problem</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#theoretical-foundation_1">Theoretical Foundation</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#vizualization">Vizualization</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#analysis_1">Analysis</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,6 +192,24 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-2">Problem 2</h1>
+<h2 id="estimating-pi-using-monte-carlo-methods">Estimating Pi using Monte Carlo Methods</h2>
+<h3 id="theoretical-foundation">Theoretical Foundation</h3>
+<p>Explanation: The ratio of points inside a circle to the total number of points in a square can be used to estimate <span class="arithmatex">\(\pi\)</span>. For a unit circle inscribed in a unit square, the area of the circle is <span class="arithmatex">\(\pi r^2\)</span> where <span class="arithmatex">\(r = 1\)</span>, so the area is <span class="arithmatex">\(\pi\)</span>. The area of the square is <span class="arithmatex">\(1 \times 1 = 1\)</span>. The ratio of the circle's area to the square's area is <span class="arithmatex">\(\pi / 1 = \pi\)</span>. By generating random points and counting those that fall inside the circle, this ratio can approximate <span class="arithmatex">\(\pi\)</span>.
+Derivation: For a unit circle, the formula is <span class="arithmatex">\(\pi \approx 4 \cdot (\text{points inside the circle} / \text{total points})\)</span>. This arises because the circle occupies a quarter of the square's area in the first quadrant, and the factor of 4 adjusts for the full circle.</p>
+<h3 id="simulation">Simulation</h3>
+<p><img alt="alt text" src="../gyf.gif"/></p>
+<h3 id="analysis">Analysis</h3>
+<p>Accuracy Improvement: The accuracy of the estimate improves as the number of points increases. With more points, the ratio better approximates the true area ratio, reducing statistical error.
+Convergence and Computational Considerations: The convergence rate is proportional to <span class="arithmatex">\(1/\sqrt{N}\)</span>, where <span class="arithmatex">\(N\)</span> is the number of points, indicating a slow but steady improvement. Computationally, this method is efficient for large <span class="arithmatex">\(N\)</span> but requires sufficient random number quality to avoid bias.</p>
+<h2 id="buffons-needle-problem">Buffon's Needle Problem</h2>
+<h3 id="theoretical-foundation_1">Theoretical Foundation</h3>
+<p>Buffon's Needle problem estimates <span class="arithmatex">\(\pi\)</span> based on the probability of a needle crossing parallel lines on a plane. A needle of length <span class="arithmatex">\(l\)</span> is dropped on a plane with parallel lines spaced <span class="arithmatex">\(d\)</span> apart (where <span class="arithmatex">\(l \leq d\)</span>). The probability of crossing a line depends on the angle and position.
+Derivation: The formula is <span class="arithmatex">\(\pi \approx (2 \cdot \text{needle length} \cdot \text{number of throws}) / (\text{distance between lines} \cdot \text{number of crossings})\)</span>.</p>
+<h3 id="vizualization">Vizualization</h3>
+<p><img alt="alt text" src="../image-6.png"/></p>
+<h3 id="analysis_1">Analysis</h3>
+<p>Accuracy Effect: The number of needle drops affects the estimate's accuracy. More drops reduce variance and improve the estimate.
+Convergence Comparison: This method's convergence rate is also approximately <span class="arithmatex">\(1/\sqrt{N}\)</span>, similar to the circle-based approach, but it may require careful handling of angle distributions for accuracy.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
