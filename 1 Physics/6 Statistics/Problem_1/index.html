@@ -84,6 +84,30 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#exploring-the-central-limit-theorem">Exploring the Central Limit Theorem</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#common-distributions-in-real-world-applications">Common Distributions in Real-World Applications</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#definitions-with-examples">Definitions with Examples</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-concepts">Advanced Concepts</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#sampling-and-visualization">Sampling and Visualization</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#parameter-exploration">Parameter Exploration</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#skewnesskurtosis-impact">Skewness/Kurtosis Impact</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#variance-impact">Variance Impact</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#observations">Observations</a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#real-world-implications-of-exploring-the-central-limit-theorem">Real-World Implications of Exploring the Central Limit Theorem</a>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../Problem_2/">Problem 2</a>
@@ -172,6 +196,68 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<h2 id="exploring-the-central-limit-theorem">Exploring the Central Limit Theorem</h2>
+<p>The Central Limit Theorem (CLT) is a cornerstone of statistics, stating that the sampling distribution of the sample mean approaches a normal distribution as the sample size <span class="arithmatex">\(n\)</span> increases, regardless of the population's underlying distribution. Mathematically, for a population with mean <span class="arithmatex">\(\mu\)</span> and variance <span class="arithmatex">\(\sigma^2\)</span>, the sampling distribution of the sample mean <span class="arithmatex">\(\bar{x}\)</span> is approximately normal with mean <span class="arithmatex">\(\mu\)</span> and variance <span class="arithmatex">\(\frac{\sigma^2}{n}\)</span> for sufficiently large <span class="arithmatex">\(n\)</span>.
+In this note, we explore the CLT through simulations using uniform, exponential, and binomial distributions to demonstrate how the sampling distribution of the sample mean behaves.
+The normal distribution is a special case where the population is already normally distributed, but the CLT's power lies in its applicability to any distribution, making it invaluable in statistical inference.</p>
+<h3 id="common-distributions-in-real-world-applications">Common Distributions in Real-World Applications</h3>
+<p>Uniform: Computer-generated random numbers for simulations (e.g., Monte Carlo methods).</p>
+<p>Exponential: Lifespan of electronic components before failure.</p>
+<p>Binomial: Number of defective items in a batch of products during quality inspection.</p>
+<p>Normal: Blood pressure readings in a healthy population.</p>
+<p>Poisson: Number of cars passing through a toll booth in an hour.</p>
+<p>Geometric: Number of attempts to open a combination lock until success.</p>
+<p>Negative Binomial: Number of soccer games played until a team scores 3 goals.</p>
+<p>Log-normal: Time to complete complex tasks (e.g., software development projects).</p>
+<h3 id="definitions-with-examples">Definitions with Examples</h3>
+<h4 id="population">Population</h4>
+<p>Definition: The entire group of individuals or instances about which conclusions are drawn.</p>
+<h4 id="sample">Sample</h4>
+<p>Definition: A subset of the population selected for analysis, as studying the entire population is often infeasible.</p>
+<h4 id="sample-size">Sample Size</h4>
+<p>Definition: The number of observations in a sample.</p>
+<h4 id="sampling-distribution">Sampling Distribution</h4>
+<p>Definition: The probability distribution of a statistic (e.g., sample mean) obtained from repeated samples of the same population.</p>
+<h4 id="sample-mean">Sample Mean</h4>
+<p>Definition: The average of a sample, used to estimate the population mean.</p>
+<h3 id="advanced-concepts">Advanced Concepts</h3>
+<h4 id="convergence-to-normality">Convergence to Normality</h4>
+<p>Definition: As sample size <span class="arithmatex">\(n\)</span> increases, the sampling distribution of the sample mean <span class="arithmatex">\(\bar{x}\)</span> approaches a normal distribution, regardless of the population’s distribution.</p>
+<h4 id="skewness">Skewness</h4>
+<p>Definition: A measure of a distribution’s asymmetry around its mean.</p>
+<h4 id="kurtosis">Kurtosis</h4>
+<p>Definition: A measure of a distribution’s "tailedness" compared to a normal distribution.</p>
+<h4 id="variance">Variance</h4>
+<p>Definition: A measure of data spread from the mean.</p>
+<h4 id="standard-deviation">Standard Deviation</h4>
+<p>Definition: The square root of variance, measuring spread in the same units as the data.</p>
+<h4 id="normal-distribution">Normal Distribution</h4>
+<p>Definition: A symmetric, bell-shaped probability distribution defined by mean <span class="arithmatex">\(\mu\)</span> and standard deviation <span class="arithmatex">\(\sigma\)</span>.</p>
+<h2 id="sampling-and-visualization">Sampling and Visualization</h2>
+<p><img alt="alt text" src="../image-3.png"/></p>
+<p><img alt="alt text" src="../image-4.png"/></p>
+<p><img alt="alt text" src="../image-5.png"/></p>
+<h2 id="parameter-exploration">Parameter Exploration</h2>
+<h3 id="skewnesskurtosis-impact">Skewness/Kurtosis Impact</h3>
+<p>Uniform: Low skewness (symmetric) and low kurtosis (light tails) allow rapid convergence to normality, evident as the sampling distribution closely matches the normal curve even at <span class="arithmatex">\(n=5\)</span>.</p>
+<p>Exponential: High skewness (right-skewed) and moderate kurtosis slow convergence, with noticeable normality emerging only at <span class="arithmatex">\(n=30\)</span> or higher.</p>
+<p>Binomial: Moderate skewness (depending on parameters) and kurtosis lead to gradual convergence, with a clear normal shape by <span class="arithmatex">\(n=50\)</span>.</p>
+<h3 id="variance-impact">Variance Impact</h3>
+<p>Across all distributions, the spread of the sampling distribution decreases as sample size <span class="arithmatex">\(n\)</span> increases, consistent with the variance <span class="arithmatex">\(\frac{\sigma^2}{n}\)</span>.
+Uniform shows a narrower spread early (e.g., <span class="arithmatex">\(n=5\)</span>), reflecting lower initial variance.</p>
+<p>Exponential and Binomial exhibit wider spreads at small <span class="arithmatex">\(n\)</span> due to higher variance, which narrows significantly by <span class="arithmatex">\(n=50\)</span>.</p>
+<h3 id="observations">Observations</h3>
+<p>Uniform Distribution: As seen in the CLT sampling distribution graphs for the uniform distribution, its symmetry (low skewness and kurtosis) allows the sampling distribution to closely resemble a normal curve even at a small sample size of <span class="arithmatex">\(n=10\)</span>, as shown in the plot.
+Exponential Distribution: The graphs highlight the exponential distribution's high skewness and moderate kurtosis, necessitating larger sample sizes (<span class="arithmatex">\(n \geq 30\)</span>) for the sampling distribution to approximate normality, with noticeable improvement visible from <span class="arithmatex">\(n=30\)</span> onward.
+Binomial Distribution: Reflected in the binomial distribution plots, its discrete and bounded nature leads to a gradual convergence to normality, displaying central tendency that becomes more pronounced by <span class="arithmatex">\(n=50\)</span>.
+Variance Impact: The graphs across all distributions demonstrate that higher population variance <span class="arithmatex">\(\sigma^2\)</span> results in wider sampling distributions at smaller <span class="arithmatex">\(n\)</span> (e.g., exponential at <span class="arithmatex">\(n=5\)</span>), with the standard error decreasing as <span class="arithmatex">\(\frac{\sigma}{\sqrt{n}}\)</span> as sample size increases, aligning with CLT principles.
+Convergence Insight: The progression across the uniform, exponential, and binomial distribution plots confirms the CLT, showing that sample mean distributions approach normality as <span class="arithmatex">\(n\)</span> increases, evident from the tightening fit to the normal curve from <span class="arithmatex">\(n=5\)</span> to <span class="arithmatex">\(n=50\)</span>.</p>
+<h3 id="real-world-implications-of-exploring-the-central-limit-theorem">Real-World Implications of Exploring the Central Limit Theorem</h3>
+<p>Polling: The CLT enables accurate estimation of national opinions or voter preferences from small, random samples (e.g., 1,000 respondents).</p>
+<p>Manufacturing: In quality control, sample averages from production batches  can detect process drift, ensuring products stay within tolerance, leveraging the CLT's convergence to normality.</p>
+<p>Finance: Risk and return models rely on the CLT to assume normality in aggregated data, allowing reliable predictions from sample means despite skewed individual data.</p>
+<p>Healthcare: Estimating average patient recovery times or drug efficacy from clinical trial samples (e.g., binomial or exponential distributions) benefits from the CLT, enabling valid inferences as sample sizes grow.</p>
+<p>Market Research: The CLT supports drawing conclusions about consumer behavior from survey samples, with the variance impact (narrowing at larger <span class="arithmatex">\(n\)</span>) ensuring precision in mean estimates.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
