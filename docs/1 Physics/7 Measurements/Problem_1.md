@@ -10,7 +10,6 @@ For small-angle oscillations ($<15^\circ$), the period $T$ of a pendulum of leng
 $$T = 2\pi \sqrt{\frac{L}{g}}$$
 Solving for $g$:
 $$g = \frac{4\pi^2 L}{T^2}$$
-Experimental Procedure
 ### Materials
 
 String (1.0 m long)
@@ -24,7 +23,7 @@ Ruler (resolution: 1 mm)
 ### Setup
 
 Attach the weight to the string, securing the other end to a fixed support.
-Measure $L = 1.00 , \text{m}$ from the suspension point to the weight’s center. Uncertainty: $\delta L = \frac{0.001}{2} = 0.0005 , \text{m}$.
+Measure $L = 1.00 \text{m}$ from the suspension point to the weight’s center. Uncertainty: $\delta L = \frac{0.001}{2} = 0.0005 , \text{m}$.
 
 Data Collection
 
@@ -34,7 +33,7 @@ Calculate the mean $\overline{T_{10}}$, standard deviation $s$, and period $T = 
 
 Input Data
 
-$L = 1.00 , \text{m}$
+$L = 1.00 \text{m}$
 Times for 10 oscillations (s): 19.93, 19.65, 19.70, 20.93, 20.89, 20.89, 20.96, 20.90, 20.81, 20.86
 
 ![alt text](image.png)
