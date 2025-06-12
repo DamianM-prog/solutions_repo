@@ -92,6 +92,16 @@
 <ul class="current">
 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 1</a>
 <ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="#materials">Materials</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#results">Results</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#comparison">Comparison:</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#conclusion">Conclusion</a>
+</li>
 </ul>
 </li>
 </ul>
@@ -172,6 +182,58 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div class="section" itemprop="articleBody">
 <h1 id="problem-1">Problem 1</h1>
+<p>Measuring Earth's Gravitational Acceleration with a Pendulum
+Motivation
+The acceleration due to gravity, <span class="arithmatex">\(g\)</span>, is a fundamental constant critical for physics, engineering, and geosciences. A simple pendulum, with its period dependent on <span class="arithmatex">\(g\)</span>, offers a classical method to measure this constant. This experiment emphasizes precise measurement and uncertainty analysis.
+Objective
+Measure <span class="arithmatex">\(g\)</span> using a simple pendulum and analyze measurement uncertainties in detail.
+Theoretical Background
+For small-angle oscillations (<span class="arithmatex">\(&lt;15^\circ\)</span>), the period <span class="arithmatex">\(T\)</span> of a pendulum of length <span class="arithmatex">\(L\)</span> is:
+<span class="arithmatex">\(<span class="arithmatex">\(T = 2\pi \sqrt{\frac{L}{g}}\)</span>\)</span>
+Solving for <span class="arithmatex">\(g\)</span>:
+<span class="arithmatex">\(<span class="arithmatex">\(g = \frac{4\pi^2 L}{T^2}\)</span>\)</span>
+Experimental Procedure</p>
+<h3 id="materials">Materials</h3>
+<p>String (1.0 m long)</p>
+<p>Small weight (e.g., bag of coins)</p>
+<p>Stopwatch</p>
+<p>Ruler (resolution: 1 mm)</p>
+<h3 id="setup">Setup</h3>
+<p>Attach the weight to the string, securing the other end to a fixed support.
+Measure <span class="arithmatex">\(L = 1.00 , \text{m}\)</span> from the suspension point to the weight’s center. Uncertainty: <span class="arithmatex">\(\delta L = \frac{0.001}{2} = 0.0005 , \text{m}\)</span>.</p>
+<p>Data Collection</p>
+<p>Displace the pendulum slightly (<span class="arithmatex">\(&lt;15^\circ\)</span>) and release.
+Measure the time for 10 oscillations (<span class="arithmatex">\(T_{10}\)</span>) 10 times.
+Calculate the mean <span class="arithmatex">\(\overline{T_{10}}\)</span>, standard deviation <span class="arithmatex">\(s\)</span>, and period <span class="arithmatex">\(T = \frac{\overline{T_{10}}}{10}\)</span>.</p>
+<p>Input Data</p>
+<p><span class="arithmatex">\(L = 1.00 , \text{m}\)</span>
+Times for 10 oscillations (s): 19.93, 19.65, 19.70, 20.93, 20.89, 20.89, 20.96, 20.90, 20.81, 20.86</p>
+<p><img alt="alt text" src="../image.png"/></p>
+<p>Calculations</p>
+<p>Mean time for 10 oscillations:
+<span class="arithmatex">\(<span class="arithmatex">\(\overline{T_{10}} = \frac{205.52}{10} = 20.552 \, \text{s}\)</span>\)</span></p>
+<p>Period:
+<span class="arithmatex">\(<span class="arithmatex">\(T = \frac{20.552}{10} = 2.0552 \, \text{s}\)</span>\)</span></p>
+<p>Standard deviation:
+<span class="arithmatex">\(<span class="arithmatex">\(s = \sqrt{\frac{1}{9} \sum (T_i - 20.552)^2} \approx 0.4083 \, \text{s}\)</span>\)</span></p>
+<p>Uncertainty in <span class="arithmatex">\(\overline{T_{10}}\)</span>:
+<span class="arithmatex">\(<span class="arithmatex">\(u_{\overline{T_{10}}} = \frac{0.4083}{\sqrt{10}} \approx 0.1292 \, \text{s}\)</span>\)</span></p>
+<p>Uncertainty in <span class="arithmatex">\(T\)</span>:
+<span class="arithmatex">\(<span class="arithmatex">\(u_T = \frac{0.1292}{10} = 0.01292 \, \text{s}\)</span>\)</span></p>
+<p>Calculation of <span class="arithmatex">\(g\)</span>:
+<span class="arithmatex">\(<span class="arithmatex">\(g = \frac{4 \pi^2 \cdot 1.00}{(2.0552)^2} \approx \frac{39.478}{4.224} \approx 9.36 \, \text{m/s}^2\)</span>\)</span></p>
+<p>Uncertainty in <span class="arithmatex">\(g\)</span>:
+Relative uncertainty:
+<span class="arithmatex">\(<span class="arithmatex">\(\frac{\delta g}{g} = \sqrt{\left( \frac{\delta L}{L} \right)^2 + \left( \frac{2 \delta T}{T} \right)^2} = \sqrt{\left( \frac{0.0005}{1.00} \right)^2 + \left( \frac{2 \cdot 0.01292}{2.0552} \right)^2} \approx 0.01258\)</span>\)</span>
+Absolute uncertainty:
+<span class="arithmatex">\(<span class="arithmatex">\(\delta g = 9.36 \cdot 0.01258 \approx 0.12 \, \text{m/s}^2\)</span>\)</span></p>
+<h3 id="results">Results</h3>
+<p>The measured gravitational acceleration is:
+<span class="arithmatex">\(<span class="arithmatex">\(g = 9.36 \pm 0.12 \, \text{m/s}^2\)</span>\)</span></p>
+<h3 id="comparison">Comparison:</h3>
+<p>The result is slightly below the standard <span class="arithmatex">\(g \approx 9.81 , \text{m/s}^2\)</span>, possibly due to air resistance or pivot friction.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Using a pendulum of length <span class="arithmatex">\(L = 1.00 , \text{m}\)</span>, we measured <span class="arithmatex">\(g = 9.36 \pm 0.12 , \text{m/s}^2\)</span>. The experiment underscores the importance of uncertainty analysis and precise measurements in determining physical constants.</p>
 </div>
 </div><footer>
 <div aria-label="Footer Navigation" class="rst-footer-buttons" role="navigation">
